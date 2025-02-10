@@ -1,0 +1,418 @@
+{
+  
+  "responsive-layout.mobile#footer-main-mobile": {
+    "children": [
+      "flex-layout.row#footer-main-mobile",
+      "flex-layout.row#footer-contato-mobile"
+    ]
+  },
+
+  "responsive-layout.desktop#footer-main-desktop": {
+    "children": ["flex-layout.row#footer-main"]
+  },
+
+  "flex-layout.row#footer-main-mobile": {
+    "title": "Footer conteúdos",
+    "props": {
+      "blockClass": ["footer-main-mobile","bg-gray-color"],
+      "horizontalAlign": "between",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    },
+    "children": [
+      "flex-layout.col#footer-institucional",
+      "flex-layout.col#footer-ajuda",
+      "flex-layout.col#footer-transporte",
+      "flex-layout.col#footer-certificados",
+      "flex-layout.col#footer-pagamento",
+      "flex-layout.col#footer-redes-sociais-mobile"
+      
+    ]
+  },
+  "flex-layout.row#footer-contato-mobile": {
+    "title": "Footer conteúdos", 
+    "children": ["flex-layout.col#footer-contato-mobile"],
+    "props": {
+      "blockClass": ["bg-gray-color","footer-contato-mobile"]
+    }
+  },
+
+
+  "flex-layout.row#footer-main": {
+    "title": "Footer conteúdos",
+    "props": {
+      "blockClass": "bg-gray-color",
+      "horizontalAlign": "between",
+      "paddingTop": 8,
+      "paddingBottom": 8
+    },
+    "children": [
+      "flex-layout.col#footer-main-col1",
+      "flex-layout.col#footer-main-col2" 
+    ]
+  },
+  
+  "flex-layout.col#footer-main-col1": {
+    "children": [
+      "image#footer-main-col2-logo",
+      "rich-text#footer-main-col1-endereco"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  }, 
+    "image#footer-main-col2-logo": {
+      "title": "Logo Varotti",
+      "props": {
+        "src": "/arquivos/varotti_logo.png",
+        "blockClass": "logo-footer"
+      }
+    },
+    "rich-text#footer-main-col1-endereco": {
+      "props": {
+        "text": "#### Loja Física \n Avenida Inajar de Souza, 3831 Limão - São Paulo/SP \n\n **Segunda à sexta** \n das 8h às 17h \n **Sábado** \n das 8h às 12h",
+        "blockClass": ["footer-title","mobile-text-center"]
+      }
+    },
+
+  
+
+
+  "flex-layout.col#footer-main-col2": {
+    "children": [
+      "flex-layout.row#footer-main-col2-row1",
+      "flex-layout.row#footer-main-col2-row2"
+    ],
+    "props": {
+      "width": "72%"
+    }
+  },
+  "flex-layout.row#footer-main-col2-row1": {
+    "children": [
+      "flex-layout.col#footer-institucional",
+      "flex-layout.col#footer-ajuda",
+      "flex-layout.col#footer-contato"
+    ],
+    "props": { 
+      "marginBottom": 7 
+    }
+  },
+  "flex-layout.row#footer-main-col2-row2": {
+    "children": [
+      "flex-layout.col#footer-transporte",
+      "flex-layout.col#footer-certificados",
+      "flex-layout.col#footer-pagamento"
+    ] 
+  },
+
+  "flex-layout.col#footer-ajuda": {
+    "children": [
+      "rich-text#footer-title-ajuda",
+      "vtex.menu@2.x:menu#footer-menu-ajuda"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+    "rich-text#footer-title-ajuda": {
+      "props": {
+        "text": "#### Ajuda",
+        "blockClass": "footer-title"
+      }
+    },
+  
+
+  
+  "flex-layout.col#footer-institucional": {
+    "children": [      
+      "rich-text#footer-title-institucional",
+      "vtex.menu@2.x:menu#menu-lateral-institucionais"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+    "rich-text#footer-title-institucional": {
+      "props": {
+        "text": "#### Institucional",
+        "blockClass": "footer-title"
+      }
+    },
+
+    
+  "flex-layout.col#footer-contato-mobile": {
+    "children": [
+      "rich-text#footer-title-contato", 
+      "rich-text#footer-contato-email",
+      "rich-text#footer-contato-telefone" 
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  
+  "flex-layout.col#footer-redes-sociais-mobile": {
+    "children": [ 
+      "rich-text#footer-title-redes-sociais",  
+      "flex-layout.row#footer-redes-sociais"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "flex-layout.col#footer-contato": {
+    "children": [
+      "rich-text#footer-title-contato", 
+      "rich-text#footer-contato-email",
+      "rich-text#footer-contato-telefone",
+      
+      "rich-text#footer-title-redes-sociais",  
+      "flex-layout.row#footer-redes-sociais"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+    "rich-text#footer-title-contato": {
+      "props": {
+        "text": "#### Contato",
+        "blockClass": "footer-title"
+      }
+    },
+    "rich-text#footer-contato-email": {
+      "props": {
+        "text": "sac@varotti.com.br",
+        "blockClass": "contato-email"
+      }
+    },
+    "rich-text#footer-contato-telefone": {
+      "props": {
+        "text": "(11) 3851-6875",
+        "blockClass": "contato-telefone"
+      }
+    },
+
+
+    
+  "flex-layout.row#footer-redes-sociais": {
+    "children": [ 
+      "image#footer-redes-sociais-1",
+      "image#footer-redes-sociais-2"
+    ],
+    "props": { 
+      "colSizing": "auto",
+      "blockClass": ["flex-wrap","items-center"],
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "colGap": 5, 
+      "marginTop": 3,
+      "preserveLayoutOnMobile": true
+    }
+  },
+    "rich-text#footer-title-redes-sociais": {
+      "props": {
+        "text": "#### Redes Sociais",
+        "blockClass": "footer-title"
+      }
+    },
+    "image#footer-redes-sociais-1": {
+      "title": "Selo 1",
+      "props": {
+        "src": "assets/imgs/icones/instagram-footer.svg",
+        "link": {
+          "url": "https://www.instagram.com/lojavarotti/",
+          "newTab": true
+        }
+      }
+    },
+    "image#footer-redes-sociais-2": {
+      "title": "Selo 2",
+      "props": {
+        "src": "assets/imgs/icones/facebook-footer.svg",
+        "link": {
+          "url": "https://www.facebook.com/lojavarotti/",
+          "newTab": true
+        }
+      }
+    },
+
+
+
+
+
+  "flex-layout.col#footer-certificados": {
+    "children": [      
+      "rich-text#footer-title-certificados",
+      "flex-layout.row#footer-certificados"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "flex-layout.row#footer-certificados": {
+    "children": [
+      "image#footer-certificados-1",
+      "image#footer-certificados-2",
+      "image#footer-certificados-3"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["flex-wrap","items-center"],
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "colGap": 5, 
+      "marginTop": 3,
+      "preserveLayoutOnMobile": true
+    }
+  },
+    "rich-text#footer-title-certificados": {
+      "props": {
+        "text": "#### Certificados",
+        "blockClass": "footer-title"
+      }
+    },
+    "image#footer-certificados-1": {
+      "title": "Selo 1",
+      "props": {
+        "src": "/arquivos/certificado--lets_encrypt.png" 
+      }
+    },
+    "image#footer-certificados-2": {
+      "title": "Selo 2",
+      "props": {
+        "src": "/arquivos/certificado--google.png" 
+      }
+    },
+    "image#footer-certificados-3": {
+      "title": "Selo 3",
+      "props": {
+        "src": "/arquivos/selo-pci-certified.png" 
+      }
+    },
+
+  
+
+
+  
+  "flex-layout.col#footer-transporte": {
+    "children": [      
+      "rich-text#footer-title-transporte",
+      "flex-layout.row#footer-transporte"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "flex-layout.row#footer-transporte": {
+    "children": [
+      "image#footer-transporte-1",
+      "image#footer-transporte-2"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "flex-wrap",
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "colGap": 5,
+      "marginTop": 3,
+      "preserveLayoutOnMobile": true
+    }
+  },
+    "rich-text#footer-title-transporte": {
+      "props": {
+        "text": "#### Transporte",
+        "blockClass": "footer-title"
+      }
+    },
+    "image#footer-transporte-1": {
+      "title": "Selo Jamef",
+      "props": {
+        "src": "/arquivos/transportadora--jamef.png" 
+      }
+    },
+    "image#footer-transporte-2": {
+      "title": "Selo Correios",
+      "props": {
+        "src": "/arquivos/transportadora--correios.png" 
+      }
+    },
+  
+  
+  "flex-layout.col#footer-pagamento": {
+    "children": [      
+      "rich-text#footer-title-pagamento",
+      "flex-layout.row#footer-pagamento"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "flex-layout.row#footer-pagamento": {
+    "children": [
+      "image#footer-pagamento-1",
+      "image#footer-pagamento-2",
+      "image#footer-pagamento-3",
+      "image#footer-pagamento-4",
+      "image#footer-pagamento-5",
+      "image#footer-pagamento-6",
+      "image#footer-pagamento-7"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["flex-wrap","items-center", "footer-imgs"],
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "colGap": 5, 
+      "marginTop": 4,
+      "preserveLayoutOnMobile": true
+    }
+  },
+    "rich-text#footer-title-pagamento": {
+      "props": {
+        "text": "#### Pagamento",
+        "blockClass": "footer-title"
+      }
+    },
+    "image#footer-pagamento-1": {
+      "title": "Selo 1",
+      "props": {
+        "src": "/arquivos/icon_Visa_.png" 
+      }
+    },
+    "image#footer-pagamento-2": {
+      "title": "Selo 2",
+      "props": {
+        "src": "/arquivos/icon_MasterCard_.png" 
+      }
+    },
+    "image#footer-pagamento-3": {
+      "title": "Selo 3",
+      "props": {
+        "src": "/arquivos/icon_pix_.png" 
+      }
+    },
+    "image#footer-pagamento-4": {
+      "title": "Selo 4",
+      "props": {
+        "src": "/arquivos/icon_elo_.png" 
+      }
+    },
+    "image#footer-pagamento-5": {
+      "title": "Selo 5",
+      "props": {
+        "src": "/arquivos/icon_amex_.png" 
+      }
+    },
+    "image#footer-pagamento-6": {
+      "title": "Selo 6",
+      "props": {
+        "src": "/arquivos/icon_Hipercard_.png" 
+      }
+    },
+    "image#footer-pagamento-7": {
+      "title": "Selo 7",
+      "props": {
+        "src": "/arquivos/icon_Diners Club_.png" 
+      }
+    }
+}

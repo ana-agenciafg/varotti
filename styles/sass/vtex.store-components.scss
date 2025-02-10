@@ -1,0 +1,234 @@
+.container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.logoLink{
+  text-align: center;
+}
+.imageElement--margin-right-5{
+  margin-right: 5px;
+}
+.imageElement--margin-right-10{
+  margin-right: 10px;
+}
+.searchBarContainer {
+  :global(.vtex-input__suffix){ 
+    padding: 0;
+  }
+  :global(.vtex-input-prefix__group){ 
+    height: 36px;
+    border: 1px solid $primaryColor;
+    border-radius: 100px;
+  }
+}
+.productDescriptionText{
+  color: initial;
+}
+.logoContainer{
+  display: block;
+  padding: 0;
+  max-width: unset;
+  max-height: unset;
+  min-width: unset;
+}
+
+.skuSelectorNameContainer {
+  .skuSelectorTextContainer {
+    margin-bottom: 10px;
+    &::before{
+      content: "Selecione o ";
+      text-transform: unset;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: $textColor;
+    } 
+  }
+  .skuSelectorName {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $textColor;
+    text-transform: lowercase;
+    &::after{
+      content: ":";
+    }
+  } 
+}
+.skuSelectorOptionsList {
+  margin: 0;
+  .skuSelectorItem{
+    height: 28px;
+    margin: 0 8px 8px 0;
+    &.skuSelectorItem--selected .skuSelectorInternalBox{ 
+      border-color: $primaryColor; 
+      border-width: 2px;
+      .skuSelectorItemTextValue {
+        font-weight: 600;
+        color: $primaryColor;
+        font-weight: bold;
+      }
+    }
+  }
+  .frameAround {
+    border: 0;
+  }
+  .skuSelectorInternalBox  { 
+    border: 1px solid #cacbcc;
+    .skuSelectorItemTextValue {
+      color: $textColor;
+      font-weight: 500;
+      font-size: 0.75rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+.productNameContainer{
+  .productBrand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    @include mobile{
+      font-size: 1.375rem;
+    }
+  }
+}
+.shippingContainer {
+  margin-top: 10px;
+  padding-top: 35px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  position: relative;
+  :global(.vtex-input__label){
+    top: 0;  
+    position: absolute;
+  }
+  :global(.vtex-address-form__postalCode-forgottenURL){ 
+    text-decoration: underline;
+  }
+  :global(.vtex-button){
+    width: 80px;
+    cursor: pointer; 
+    background-color: transparent;
+    border: 1px solid $primaryColor; 
+    height: 40px;
+    transition: .2s ease;
+    &:hover{
+      background-color: $primaryColor;
+      transition: .2s ease;
+      :global(.vtex-button__label){
+        color: white;
+      }
+    }
+    :global(.vtex-button__label){
+      color: $primaryColor;
+      font-size: 0;
+      &::before{
+        content: "Calcular";
+        font-size: 0.875rem;
+      }
+    }
+  }
+  :global(.vtex__icon-external-link){
+    display: none;
+  }
+  :global(.vtex-address-form__postalCode){
+    width: calc(100% - 90px); 
+    padding-bottom: 0;
+  }
+  :global(.vtex-input-prefix__group){  
+    border: 1px solid $primaryColor;
+  }
+  :global(.vtex-input__label){
+    font-size: 0;
+    &::before{
+      content: url('data:image/svg+xml,%3Csvg%20width%3D%2219%22%20height%3D%2219%22%20viewBox%3D%220%200%2019%2019%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20clip-path%3D%22url(%23clip0_39_117)%22%3E%3Cpath%20d%3D%22M3.34759%2014.0238C3.34759%2014.5037%203.53823%2014.964%203.87758%2015.3033C4.21693%2015.6427%204.67719%2015.8333%205.15711%2015.8333C5.63703%2015.8333%206.09728%2015.6427%206.43664%2015.3033C6.77599%2014.964%206.96663%2014.5037%206.96663%2014.0238M3.34759%2014.0238C3.34759%2013.5439%203.53823%2013.0836%203.87758%2012.7443C4.21693%2012.4049%204.67719%2012.2143%205.15711%2012.2143C5.63703%2012.2143%206.09728%2012.4049%206.43664%2012.7443C6.77599%2013.0836%206.96663%2013.5439%206.96663%2014.0238M3.34759%2014.0238H1.53806V10.4048M6.96663%2014.0238H12.3952M12.3952%2014.0238C12.3952%2014.5037%2012.5859%2014.964%2012.9252%2015.3033C13.2646%2015.6427%2013.7248%2015.8333%2014.2047%2015.8333C14.6846%2015.8333%2015.1449%2015.6427%2015.4843%2015.3033C15.8236%2014.964%2016.0143%2014.5037%2016.0143%2014.0238M12.3952%2014.0238C12.3952%2013.5439%2012.5859%2013.0836%2012.9252%2012.7443C13.2646%2012.4049%2013.7248%2012.2143%2014.2047%2012.2143C14.6846%2012.2143%2015.1449%2012.4049%2015.4843%2012.7443C15.8236%2013.0836%2016.0143%2013.5439%2016.0143%2014.0238M16.0143%2014.0238H17.8238V8.59523M0.633301%203.16666H10.5857V14.0238M17.8238%208.59523H10.5857M17.8238%208.59523L15.1095%204.07142H10.5857M1.53806%206.7857H5.15711%22%20stroke%3D%22%233D3D3D%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip0_39_117%22%3E%3Crect%20width%3D%2219%22%20height%3D%2219%22%20fill%3D%22white%22%3E%3C%2Frect%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
+      margin-right: 8px;
+      position: relative;
+      top: 3px;
+    }
+    &::after{
+      content: "Frete e Prazo de Entrega";
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+  }
+} 
+
+
+.swiperCaretNext,.productImagesThumbCaret.gradientBaseRight{
+  &::before{
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyOSAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC43NzExIDI2LjI2N0wyMC4wNDA2IDE0Ljk5NzZMOC43NzExIDMuNzI4MjEiIHN0cm9rZT0iIzE1MTUxNSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPjwvc3ZnPg==');
+  }
+  .caretIcon{
+    display: none;
+  }
+}
+.swiperCaretPrev,.productImagesThumbCaret.gradientBaseLeft{
+  &::before{
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyOSAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuMjI5OSAzLjcyODI3TDguOTYwMzkgMTQuOTk3N0wyMC4yMjk5IDI2LjI2NyIgc3Ryb2tlPSIjMTUxNTE1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+PC9zdmc+');
+  }
+  .caretIcon{
+    display: none;
+  }
+}
+
+.productImagesThumb {
+  padding-right: 10px;
+  height: fit-content!important;
+  margin-bottom: 0;
+  &.productImagesThumbActive .figure{
+    border: 1px solid $primaryColor;
+  }
+}
+
+.imageElement--newsletter-selo {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  @include mobile{
+    left: 0;
+    margin: 0 auto;
+  }
+}
+.imageElement--logo-footer{
+  @include mobile{
+    width: 110px;
+    margin: 0 auto 25px;
+    display: block;    
+  }
+}
+.productImagesContainer {
+  @include mobile{
+    margin-bottom: 10px;
+  }
+}
+
+.resultsList {
+  box-shadow: unset;
+  position: unset;
+  margin: 10px 20px;
+}
+.specificationsTableContainer--topo-descricap-pdp{
+  padding-left: 0;
+  .specificationsTitle,.specificationsTableHead, .specificationItemProperty, .pointerEventsNone {
+    display: none;
+  }
+  .container {
+    padding: 0;
+    height: auto !important;
+  }
+  .specificationItemSpecifications {
+    padding: 0;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: #3D3D3D;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    border: 0;
+    margin-bottom: -6px;
+  }
+} 

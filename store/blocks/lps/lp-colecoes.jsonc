@@ -1,0 +1,26 @@
+{
+    "store.custom#lp-colecoes-custom": {
+        "blocks": [
+            "search-result-layout.customQuery#lp-colecoes-custom"
+        ]
+    },
+    "search-result-layout.customQuery#lp-colecoes-custom": {
+        "title": "LP Coleção",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "" //SETAR ID DA COLECTION NO SITE EDITOR
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+}

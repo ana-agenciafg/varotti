@@ -1,0 +1,44 @@
+{
+  "flex-layout.row#pdp-parcelamento": {
+    "props": { 
+      "marginBottom": 6
+    },
+    "children": [ "modal-trigger#pdp-parcelamento"]
+  },
+  "modal-trigger#pdp-parcelamento": {
+    "children": ["rich-text#pdp-parcelamento", "modal-layout#pdp-parcelamento"]
+  },
+  "rich-text#pdp-parcelamento": {
+    "props": {
+      "text": "Ver opções de parcelamento",
+      "font": "t-small",
+      "blockClass": "pdp-parcelamento"
+    }
+  },
+  "modal-layout#pdp-parcelamento": {
+    "children": ["modal-header","rich-text#modal-pdp-parcelamento","product-installments-list#pdp-parcelamento"],
+    "props": {
+      "blockClass": "pdp-parcelamento"
+    }
+  },
+  "product-installments-list#pdp-parcelamento": {
+    "props": {
+      "blockClass": "pdp-parcelamento-modal"
+    },
+    "children": ["product-installments-list-item#pdp-parcelamento"]
+  },
+  "product-installments-list-item#pdp-parcelamento": {
+    "props": {
+      "message": "{installmentsNumber}x R${installmentValue} sem juros"
+    }
+  },
+  "rich-text#modal-pdp-parcelamento": {
+    "props": {
+      "text": "### Opções de **parcelamento**",
+      "blockClass": "title-type-two",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "font": "t-heading-2" 
+    }
+  }
+}

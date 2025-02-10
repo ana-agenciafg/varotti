@@ -1,0 +1,34 @@
+{ 
+    "store.custom#institucional-entrega": {
+        "children": ["flex-layout.row#institucional-entrega"]
+    },  
+    "flex-layout.row#institucional-entrega": { 
+        "title": "Conteúdo principal", 
+        "props": {
+            "marginTop": 8,
+            "marginBottom": 10,
+            "horizontalAlign": "between"
+        },
+        "children": [
+            "responsive-layout.desktop#menu-lateral-institucionais-desktop",
+            "flex-layout.col#institucional-entrega"
+        ]
+    }, 
+
+    "flex-layout.col#institucional-entrega": {
+        "title": "Texto",
+        "children": ["rich-text#institucional-entrega" ],
+        "props": {
+            "width": "78%",
+            "blockClass": "institucional-principal",
+            "verticalAlign": "top"
+        }
+    },
+    "rich-text#institucional-entrega": {
+        "title": "Texto",
+        "props": {
+            "text": "# Condições Gerais \n\n As entregas via transportadora são realizadas de segunda-feira a sexta-feira, das 8h às 17h. O prazo de entrega é contado a partir da confirmação do pagamento em dias úteis, ou seja, não inclui sábados, domingos e feriados. \n\n Por favor, confira as dimensões do produto e certifique-se de que estão adequadas aos elevadores, portas e corredores do local da entrega, pois não fazemos a montagem, desmontagem do produto e/ou portas e janelas, transporte pela escada ou içamento pelo lado de fora do prédio. \n\n Após a finalização do pedido não é possível alterar a forma de entrega, solicitar adiantamento ou prioridade. Todos os prazos de entrega levam em consideração o estoque, a região, o processo de emissão da nota fiscal e o tempo de preparo do produto. A cada atualização no status do pedido nosso sistema envia, automaticamente, e-mails de alerta. Por isso, é importante manter seu e-mail atualizado no cadastro. \n\n Após a conclusão do pedido, não é possível alterar o endereço de entrega. Caso tenha fornecido o endereço errado, entre em contato com o setor de atendimento ao cliente e solicite o cancelamento da compra. \n\n Após efetuar o cancelamento, atualize o endereço de entrega no seu cadastro antes de realizar um novo pedido. \n\n Por motivos de segurança, em hipótese alguma nossos operadores alteram o endereço de entrega ou os dados cadastrais dos clientes. \n\n Caso tenha fornecido o endereço incompleto, entre em contato com o setor de atendimento ao cliente e informe os dados que faltaram. \n\n Se houver mais de uma tentativa de entrega infrutífera e o pacote retorne para o estabelecimento, a nova tentativa ficará por conta do cliente. \n\n Caso perceba inconsistências como avarias, produto errado ou falta de itens constantes na nota fiscal, entre imediatamente em contato com nossa central de atendimento e informe o ocorrido. \n\n Em situações nas quais o cliente opte pela entrega via motoboy, ele deverá estar disponível ou deixar um responsável para o recebimento do pacote na janela de tempo informada, do contrário deverá arcar com o custo da nova tentativa de entrega. \n\n **Unicamente para clientes residentes em São Paulo – SP e região metropolitana, ficam disponibilizadas as opções:** \n - Retirar na loja física, dentro do horário de funcionamento do estabelecimento; \n - Entregar pelo transporte LRV, exclusivo para chapas e módulos de MDF; \n - Entregar via motoboy Loggi, das 9h às 14h, feita em até 24 horas após confirmação do pedido.",
+            "blockClass": "content-page-institucional"
+        }
+    } 
+}

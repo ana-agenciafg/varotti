@@ -1,0 +1,138 @@
+.galleryTitle--layout {
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 769px) {
+  .galleryTitle--layout {
+    margin: 35px 0 5px;
+  }
+}
+
+.galleryItem--grid {
+  padding: 0;
+}
+
+.orderByButton {
+  background-color: transparent;
+}
+@media (max-width: 769px) {
+  .orderByButton {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .orderBy--layout {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .orderByOptionsContainer {
+    display: block !important;
+    width: 100%;
+    position: unset;
+    box-shadow: unset;
+    border: 0;
+    padding: 0 20px;
+  }
+  .orderByOptionsContainer .orderByOptionItem {
+    border-bottom: 1px solid #dce3e5;
+    text-align: center;
+  }
+}
+
+.totalProducts--layout {
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 770px) {
+  .totalProducts--layout {
+    text-align: left;
+  }
+}
+
+.totalProductsMessage {
+  text-transform: lowercase;
+  color: initial;
+}
+.totalProductsMessage::after {
+  content: " encontrados";
+}
+
+.gallery {
+  padding: 0;
+}
+@media (max-width: 769px) {
+  .gallery :global(.vtex-product-summary-2-x-container) {
+    padding: 0 5px 40px 5px;
+  }
+}
+
+.filterTitleSpan {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.filterMessage {
+  display: none;
+}
+
+.filtersWrapper {
+  margin-top: 98px;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+.filterTemplateOverflow::-webkit-scrollbar {
+  width: 6px;
+  background: #151515;
+}
+.filterTemplateOverflow::-webkit-scrollbar-thumb {
+  background: #151515;
+  border-radius: 10px;
+}
+
+.filtersWrapperMobile .filterPopupButton {
+  width: 100%;
+  margin: -6px 0 0 0;
+  padding: 0;
+}
+.filtersWrapperMobile .filterPopupTitle {
+  width: 100%;
+  border: 1px solid #3d3d3d;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+.filtersWrapperMobile .filterPopupTitle::before {
+  content: url(/arquivos/icon-filter-mob.png);
+}
+.filtersWrapperMobile .filterPopupArrowIcon {
+  display: none;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button__label) {
+  color: white;
+}
+
+.galleryItem {
+  position: relative;
+}
+.galleryItem :global(.vtex-rich-text-0-x-paragraph--flag-cashback) {
+  font-size: 11px;
+  padding: 2px 3px 1px;
+  letter-spacing: -0.5px;
+}
+.galleryItem :global(.vtex-product-price-1-x-spotPriceSavings--summary-flag-desconto) {
+  font-size: 11px;
+  padding: 2px 3px 1px;
+  letter-spacing: -0.5px;
+}

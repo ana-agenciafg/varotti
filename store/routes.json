@@ -1,0 +1,20 @@
+{
+  "store.custom#institucional-historia": {
+    "path": "/institucional/nossa-historia"
+  },
+  "store.custom#institucional-pagamento": {
+    "path": "/Institucional/formas-de-pagamento"
+  },
+  "store.custom#institucional-entrega": {
+    "path": "/Institucional/entrega"
+  },
+  "store.custom#institucional-troca": {
+    "path": "/Institucional/politica-de-troca"
+  },
+  "store.custom#institucional-politica-de-privacidade": {
+    "path": "/Institucional/politica-de-privacidade"
+  }, 
+  "store.custom#contato": {
+    "path": "/contato"
+  } 
+}

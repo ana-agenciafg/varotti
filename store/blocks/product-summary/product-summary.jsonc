@@ -1,0 +1,108 @@
+{
+  "product-summary.shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      "condition-layout.product#flag-mdf",
+      "rich-text#flag-cashback",
+      "product-summary-name", 
+      "product-summary-space",
+      "product-list-price#summary",
+      "product-spot-price#price-pix",
+      // "product-selling-price#summary",
+      "product-installments#summary",
+      "flex-layout.row#summary-btns"
+    ] 
+  }, 
+
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf",
+      "product-spot-price-savings#summary-flag-desconto-porcentagem"
+    ]
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300
+    }
+  },  
+ "condition-layout.product#flag-mdf": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "246"
+          }
+        }
+      ],
+      "Then": "rich-text#flag-mdf" 
+    }
+  },
+  "rich-text#flag-mdf": {
+    "props": {
+      "text": "SOMENTE PARA SP OFERTA EXCLUSIVA PARA CORTE", 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "flag-mdf"
+    }
+  },
+  "rich-text#flag-cashback": {
+    "props": {
+      "text": "Compre com Cashback", 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["flag-cashback","margin-0"]
+    }
+  },
+
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  }, 
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": [
+        "discount"
+      ],
+      "blockClass": "summary"
+    }
+  },
+
+  "flex-layout.row#summary-btns": {
+    "children": [
+      "add-to-cart-button#summary",
+      "rich-text#summary-ver-produtos"
+    ],
+    "props": { 
+      "marginTop": 3, 
+      "blockClass": ["summary-btns","direction-column"]
+    }
+  },
+  "add-to-cart-button#summary": {
+    "props": { 
+      "blockClass": "summary"
+    }
+  },
+  "rich-text#summary-ver-produtos": {
+    "props": {
+      "text": "Ver produto", 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margin-0","summary-ver-produto"]
+    }
+  } 
+}

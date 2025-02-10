@@ -1,0 +1,66 @@
+.compra_fixa_pdp{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16);
+}
+.compra_fixa_pdp_container{
+    max-width: 100%;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 13px 0;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: 70px 1fr 200px;
+}
+.compra_fixa_pdp_img{
+    border: 1px solid #151515;
+}
+.compra_fixa_pdp_nome_produto{
+    font-weight: normal;
+    margin-top: 0;
+}
+.compra_fixa_pdp_preco_antigo{
+    color: #757575;
+    font-size: 1rem; 
+}
+.compra_fixa_pdp_preco{
+    color: #13A43E;
+    font-size: 1.125rem;
+}
+.compra_fixa_pdp_preco :global(b){
+    font-size: 1.25rem;
+}
+.compra_fixa_pdp_preco_off{
+    background-color: #13A43E;
+    font-weight: 700;
+    padding: 4px 7px;
+    color: #FFF;
+    font-size: 0.75rem; 
+}
+.compra_fixa_pdp_precos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.compra_fixa_pdp_voltar_ao_topo{
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .compra_fixa_pdp{
+        display: none;
+    }
+}
+@media (min-width: 701px){
+    :global(body):global(.bar-active){
+        padding-bottom: 98px;
+    }
+}

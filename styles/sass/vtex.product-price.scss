@@ -1,0 +1,167 @@
+.listPriceValue {
+    .currencyContainer{
+        color: #757575; 
+        @include mobile{
+            font-size: 0.75rem;
+        }
+    } 
+}
+.spotPrice--price-pix{
+    color: $successColor;
+    @include desktop{ 
+        font-size: 1.125rem;
+    } 
+    @include mobile{
+        font-size: 0.75rem; 
+    }
+    .currencyContainer{
+        font-weight: 700;
+        @include desktop{ 
+            font-size: 1.5rem;
+        } 
+        @include mobile{
+            font-size: 1rem;
+        }
+    }
+} 
+
+.spotPrice--price-pix-pdp{
+    color: $successColor;
+    font-size: 1.125rem;
+    .currencyContainer{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+} 
+.sellingPriceValue{
+    &::before{
+        content: "ou ";
+    }
+    .currencyContainer{
+        font-weight: 700;
+    }
+}
+.installments{
+    font-size: 0; 
+    &::before{
+        content: " em ";
+        @include desktop{
+            font-size: 0.875rem;
+        } 
+        @include mobile{
+            font-size: 0.75rem;
+        }
+    } 
+    .installmentsNumber { 
+        font-weight: 700;
+        &::after{ 
+            content: "x "; 
+            @include desktop{
+                font-size: 0.875rem;
+            } 
+            @include mobile{
+                font-size: 0.75rem;
+            }
+        } 
+    } 
+    .installmentValue { 
+        font-weight: 700;
+        &::before{ 
+            content: " de ";
+            font-weight: normal;
+            @include desktop{
+                font-size: 0.875rem;
+            } 
+            @include mobile{
+                font-size: 0.75rem;
+            }
+        } 
+    } 
+    .installmentValue, .installmentsNumber {
+        @include desktop{
+            font-size: 0.875rem;
+        } 
+        @include mobile{
+            font-size: 0.75rem;
+        }
+    }
+}
+.spotPriceSavings--pdp-flag-desconto{
+    background-color: #13A43E;
+    font-weight: 700; 
+    padding: 4px 7px;
+    color: #FFF;
+    font-size: 0.75rem;
+    position: relative;
+    top: -4px;
+    left: 15px;
+    .spotPriceSavingsPercentage {
+        color: #FFF;
+        font-size: 0.75rem;
+    }
+}
+.spotPriceSavings--summary-flag-desconto{ 
+    background: #13A43E;
+    color: #FFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 3px;
+    padding: 2px 6px;
+}
+
+.installments--summary{
+    margin-top: 5px;
+    &::before{
+        content: " ou " !important;
+    }
+    .currencyContainer--summary{
+        color: $successColor;
+    }
+}
+
+.installmentsListContainer--pdp-parcelamento-modal {
+    position: relative;
+    padding-top: 25px;
+    width: fit-content;
+    margin: 0 auto;
+    &::before{
+        content: "Parcela";
+        position: absolute; 
+        display: block;
+        top: 0;
+        width: 50%;
+        left: 0;
+    }
+    &::after{
+        content: "Valor";
+        position: absolute;
+        text-align: center;
+        display: block;
+        top: 0;
+        width: 50%;
+        right: 0;
+    }
+    .installments{
+        display: block; 
+        padding: 10px;
+        border-top: 1px solid #ECECEC;
+        &::before{
+            display: none;
+        }
+    }
+    .installmentsNumber {
+        margin-right: 40px;
+    }
+    .installmentValue{
+        font-weight: 400;
+        .currencyContainer{
+            font-weight: 700;
+        }
+        &::before{
+            display: none;
+        }
+        &::after{
+            content: " sem juros";
+        }
+    }
+}

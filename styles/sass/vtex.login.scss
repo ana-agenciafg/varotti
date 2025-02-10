@@ -1,0 +1,92 @@
+:global(.render-container) :global(.flex.flex-grow-1.w-100.flex-column) {
+    background-color: $grayColor;
+}
+
+:global(.vtex-store-components-3-x-swiperCaret):global(.c-disabled){
+    display: none;
+}
+:global(.bonifiq-widget-section){  
+    zoom: .8;
+    z-index: 99!important;
+    &:not(:global(.active)){
+        @include mobile{
+            bottom: 30% !important;
+        }
+    }
+    @include mobile{
+        left: unset !important;
+        right: 10px !important;
+    }
+}
+
+:global(#_trustvox_colt){ 
+    :global(.carousel_trustvox) {
+        width: 1100px;
+        max-width: 90% !important;
+    } 
+    :global(.carousel__item) {
+        width: 100% !important;
+    }   
+    :global(.review-card) {
+        width: 96% !important;
+        margin-left: 2%;
+        margin-right: 2%;
+    }   
+    
+    :global(.carousel__prev_trustvox){
+        @include mobile{
+            left: -13%;
+        }
+        &::before{ 
+            content: url("/arquivos/arrow_left-home.png"); 
+        } 
+    }
+    :global(.carousel__next){
+        @include mobile{
+            right: -13%;
+        }
+        &::before{ 
+            content: url("/arquivos/arrow_rigth-home.png"); 
+        } 
+    }
+    :global(.carousel__next) :global(svg) {
+      display: none
+    } 
+}
+.portalContainer{
+    .content{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.content{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    @include desktop{
+        margin-top: 70px;
+    }
+}
+
+.emailPasswordOptionBtn, .accessCodeOptionBtn{
+    :global(.vtex-button){
+        border: 1px solid rgb(233, 233, 233);
+        background-color: transparent;
+        font-size: 0.875rem;  
+        font-weight: 400;
+    }
+
+}
+
+.box{
+    right: -100px !important;
+    .formTitle{
+        display: none;
+    }
+    .sendButton{
+        :global(.vtex-button){ 
+            background-color: #151515;
+            font-size: 0.875rem;  
+            font-weight: 500;
+        }
+    }
+}

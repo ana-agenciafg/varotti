@@ -1,0 +1,142 @@
+{   
+    "responsive-layout.desktop#home-shelf-1-desktop": {
+        "title": "Vitrine 1 - Desktop",
+        "children": ["flex-layout.row#home-shelf-1"]
+    },
+    "responsive-layout.mobile#home-shelf-1-mobile": {
+        "title": "Vitrine 1 - Mobile",
+        "children": ["flex-layout.row#home-shelf-1-mobile"]
+    },
+    "flex-layout.row#home-shelf-1": {
+        "title": "Prateleira de produtos",
+        "children": [ 
+            "flex-layout.row#home-shelf-title-1",
+            "list-context.product-list#home-shelf-1"
+        ], 
+        "props": {
+            "paddingTop": 6,
+            "paddingBottom": 6,
+            "blockClass": "direction-column" 
+        }
+    }, 
+    "flex-layout.row#home-shelf-1-mobile": {
+        "title": "Prateleira de produtos",
+        "children": [ 
+            "flex-layout.row#home-shelf-title-1",
+            "list-context.product-list#home-shelf-1"
+        ], 
+        "props": {
+            "paddingTop": 6,
+            "paddingBottom": 6,
+            "blockClass": "direction-column",
+            "fullWidth": true
+        }
+    }, 
+    "flex-layout.row#home-shelf-title-1": {
+        "title": "Título prateleira de produtos",
+        "children": ["rich-text#home-shelf-title-1"] 
+    },
+    "rich-text#home-shelf-title-1": {
+        "title": "Título",
+        "props": {
+            "text": "## Nossos **Lançamentos**" ,
+            "blockClass": "title-type-two",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-2" 
+        }
+    }, 
+    "list-context.product-list#home-shelf-1": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#home-shelfs"],
+        "props": { 
+            "orderBy": "OrderByPriceASC",
+            "collection": "138"
+        }
+    }, 
+
+
+
+    
+    "responsive-layout.desktop#home-shelf-2-desktop": {
+        "title": "Vitrine 2 - Desktop",
+        "children": ["flex-layout.row#home-shelf-2"]
+    },
+    "responsive-layout.mobile#home-shelf-2-mobile": {
+        "title": "Vitrine 2 - Mobile",
+        "children": ["flex-layout.row#home-shelf-2-mobile"]
+    },
+    "flex-layout.row#home-shelf-2": {
+        "title": "Prateleira de produtos",
+        "children": [ 
+            "flex-layout.row#home-shelf-title-2",
+            "list-context.product-list#home-shelf-2"
+        ], 
+        "props": {
+            "paddingTop": 6,
+            "paddingBottom": 6,
+            "blockClass": "direction-column" 
+        }
+    }, 
+    
+    "flex-layout.row#home-shelf-2-mobile": {
+        "title": "Prateleira de produtos",
+        "children": [ 
+            "flex-layout.row#home-shelf-title-2",
+            "list-context.product-list#home-shelf-2"
+        ], 
+        "props": {
+            "paddingTop": 6,
+            "paddingBottom": 6,
+            "blockClass": "direction-column",
+            "fullWidth": true
+        }
+    }, 
+    "flex-layout.row#home-shelf-title-2": {
+        "title": "Título prateleira de produtos",
+        "children": ["rich-text#home-shelf-title-2"] 
+    },
+    "rich-text#home-shelf-title-2": {
+        "title": "Título",
+        "props": {
+            "text": "## Tendências em **MDF**" ,
+            "blockClass": "title-type-two",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-2" 
+        }
+    }, 
+    "list-context.product-list#home-shelf-2": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#home-shelfs"],
+        "props": {
+            "orderBy": "OrderByPriceDESC",
+            "category": "156/246" 
+        }
+    },
+
+
+    "slider-layout#home-shelfs": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "showPaginationDots": false,
+            "fullWidth": false,
+            "blockClass": "home-shelf",
+            "autoplay": {
+              "timeout": 4000,
+              "stopOnHover": true
+            },
+            "centerMode": {
+              "desktop": "disabled",
+              "mobile": "to-the-left"
+            }, 
+            "centerModeSlidesGap": 10,
+            "showNavigationArrows": "desktopOnly"
+        }
+    } 
+}

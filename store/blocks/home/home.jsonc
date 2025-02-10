@@ -1,0 +1,93 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#home-fullbanner", 
+      "__fold__",
+      "flex-layout.row#aviso-de-frete-fixo",
+      "flex-layout.row#home-marcas", 
+      "responsive-layout.desktop#home-shelf-1-desktop", 
+      "responsive-layout.mobile#home-shelf-1-mobile", 
+      "responsive-layout.desktop#home-banner-miolo-desktop", 
+      "responsive-layout.mobile#home-banner-miolo-mobile", 
+      "responsive-layout.desktop#home-shelf-2-desktop", 
+      "responsive-layout.mobile#home-shelf-2-mobile", 
+      "responsive-layout.desktop#home-categorias-desktop",
+      "responsive-layout.mobile#home-categorias-mobile",
+      "flex-layout.row#home-trustvox-title",
+      "flex-layout.row#home-trustvox"
+    ]
+  },
+
+  "list-context.image-list#home-fullbanner": {
+    "title": "Fullbanner",
+    "children": ["slider-layout#home-fullbanner"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/206554/BANNER GAVETA BLACK FRIDAY.png?v=638660546287100000",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/206554/BANNER GAVETA BLACK FRIDAY.png?v=638660546287100000",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-fullbanner": {
+    "title": "Slider Fullbanner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home-fullbanner"
+    }
+  },
+
+  "responsive-layout.desktop#home-banner-miolo-desktop": {
+    "title": "Banner - Desktop",
+    "children": ["flex-layout.row#home-banner-miolo-desktop"]
+  },
+  "responsive-layout.mobile#home-banner-miolo-mobile": {
+    "title": "Banner - Mobile",
+    "children": ["flex-layout.row#home-banner-miolo-mobile"]
+  },
+  "flex-layout.row#home-banner-miolo-mobile":{
+    "title": "Banner Miolo",
+    "children": ["image#home-banner-miolo-mobile"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home-banner-miolo-desktop":{
+    "title": "Banner Miolo",
+    "children": ["image#home-banner-miolo-desktop"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "image#home-banner-miolo-desktop": {
+    "title": "Imagem",
+    "props": {
+      "src": "https://varotti.vteximg.com.br/arquivos/ids/197079/Banner%20Servi%C3%A7os.png",
+      "width": "100%"
+    }
+  },  
+  "image#home-banner-miolo-mobile": {
+    "title": "Imagem",
+    "props": {
+      "src": "https://varotti.vteximg.com.br/arquivos/ids/197078/Banner%20Servi%C3%A7os%20Mobile.png?v=638277231461570000",
+      "width": "100%"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Definir cores 
+$boxShadow: 0 3px 6px rgba(0,0,0,.10); 
+$primaryColor: #151515;  
+$secondaryColor: #931D1E; 
+$successColor: #13A43E;
+$grayColor: #f5f5f5;
+$textColor: #3D3D3D;
+
+// Mixin para mobile
+@mixin mobile {
+    @media (max-width: 769px) {
+        @content;
+    } 
+}
+
+// Mixin para desktop
+@mixin desktop {
+    @media (min-width: 770px) {
+        @content;
+    } 
+}

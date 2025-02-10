@@ -1,0 +1,47 @@
+.minicartIconContainer {
+    &::before{
+        content: url(assets/imgs/icones/userCart-header.svg);
+        display: block;
+    }
+    @include desktop{
+        &::after{
+            content: "Carrinho";
+            display: block;
+            color: $textColor;
+            font-size: 0.875rem;
+            margin-top: 7px;
+        }
+    }
+    @include mobile{
+        padding-right: 23px;
+    }
+    .cartIcon{
+        display: none;
+    }
+}
+.minicartWrapperContainer {
+    justify-content: flex-end;
+}
+.minicartContainer {
+    :global(.vtex-button){
+        font-weight: normal;
+    } 
+    :global(.vtex-button__label){
+        padding: 0;
+    } 
+}
+.minicartQuantityBadgeDefault{
+    background-color: $primaryColor;
+    border-radius: 100%;
+    right: 0;
+    font-weight: 600; 
+    @include mobile{
+        top: 8px;
+    }
+    @include desktop{
+        top: -7px;
+    }
+}
+.openIconContainer{
+    padding: 0;
+}

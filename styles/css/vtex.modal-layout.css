@@ -1,0 +1,29 @@
+.triggerContainer {
+  cursor: pointer;
+}
+
+.paper--pdp-parcelamento {
+  width: 370px;
+  max-width: 100%;
+  padding: 0 20px 20px;
+}
+
+.modal--share-product .paper {
+  width: 350px;
+  padding: 40px 20px;
+}
+
+.modal--header-lojas .paper {
+  width: 900px;
+  max-width: 100%;
+  padding: 50px 30px 40px;
+}
+
+.modal .headerContainer {
+  border: 0;
+}
+.modal .closeButtonContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

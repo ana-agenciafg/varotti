@@ -1,0 +1,79 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      "flex-layout.row#footer-newsletter",
+      "responsive-layout.desktop#footer-main-desktop",
+      "flex-layout.row#footer-copyright"
+    ]
+  },
+  "footer-layout.mobile": {
+    "title": "Footer Mobile",
+    "children": [
+      "flex-layout.row#footer-newsletter",
+      "responsive-layout.mobile#footer-main-mobile",
+      "flex-layout.row#footer-copyright"
+    ]
+  },
+  "flex-layout.row#footer-copyright": {
+    "title": "Footer Copyright",
+    "props": {
+      "blockClass": "bg-gray-color",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#footer-copyright",
+      "flex-layout.col#footer-selos"
+    ]
+  },
+  "flex-layout.col#footer-copyright": {
+    "children": ["rich-text#footer-copyright"],
+    "props": { 
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#footer-copyright": {
+    "title": "Copyright",
+    "props": {
+      "text": "R Varotti Ferragens e Madeiras EIRELI | CNPJ 19.612.544/0001-32. Avenida Inajar de Souza, 3831. Limão - São Paulo/SP.",
+      "blockClass": "footer",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-small"
+    }
+  },
+  "flex-layout.col#footer-selos": {
+    "children": [
+      "image#selo-agencia",
+      "image#selo-plataforma"
+    ],
+    "props": { 
+      "verticalAlign": "middle",
+      "blockClass": ["items-center","direction-row","footer-selos"]
+    }
+  },
+  "image#selo-agencia": {
+    "props": {
+      "src": "assets/imgs/agencia-fg.svg",
+      "link": {
+        "url": "https://agenciafg.com.br/",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#selo-plataforma": {
+    "props": {
+      "src": "assets/imgs/vtex-io.svg",
+      "link": {
+        "url": "https://vtex.com/",
+        "openNewTab": true
+      }
+    }
+  }
+}

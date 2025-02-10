@@ -1,0 +1,9 @@
+.product_name_pdp{
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (min-width: 701px){
+    .product_name_pdp{ font-size: 1.5rem; }
+}

@@ -1,0 +1,70 @@
+.formulariocontato{
+    margin-top: 20px;
+}
+.formulariocontato .groupInputs{
+    margin-bottom: 25px;
+}
+.formulariocontato .label{
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+} 
+.formulariocontato .btnfinal{
+    margin: 0;
+}
+.formulariocontato .sucessomensagem{
+    margin: 0; 
+}  
+.formulariocontato .erromensagem{
+    margin: 0; 
+} 
+.formulariocontato :global(input), .formulariocontato :global(textarea){
+    width: 100%;
+    border-radius: 0;
+    border: 1px #3f3f40 solid;
+    font-family: OpenSans;
+    padding: 10px;
+    outline: none;
+}    
+.formulariocontato :global(input) {
+    height: 38px;
+}    
+.formulariocontato :global(textarea) {
+    height: 138px;
+}
+.formulariocontato :global(button[type="submit"]){
+    padding: 10px 25px;
+    font-size: 1.125rem;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    float: left;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.formulariocontato .sucessomensagem{
+    display: none;    
+    text-align: center;
+    background: #d5ecba;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 10px;
+    font-weight: 500;
+    color: #147317;
+}
+
+.formulariocontato .sucessomensagem.visible{
+    display: block;
+}
+.formulariocontato .erromensagem{ 
+    display: none;
+    text-align: center;
+    background: #aa182c26;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 10px;
+    font-weight: 500;
+    color: #aa182c;
+} 

@@ -1,0 +1,34 @@
+{ 
+    "store.custom#institucional-troca": {
+        "children": ["flex-layout.row#institucional-troca"]
+    },  
+    "flex-layout.row#institucional-troca": { 
+        "title": "Conteúdo principal", 
+        "props": {
+            "marginTop": 8,
+            "marginBottom": 10,
+            "horizontalAlign": "between"
+        },
+        "children": [
+            "responsive-layout.desktop#menu-lateral-institucionais-desktop",
+            "flex-layout.col#institucional-troca"
+        ]
+    }, 
+
+    "flex-layout.col#institucional-troca": {
+        "title": "Texto",
+        "children": ["rich-text#institucional-troca" ],
+        "props": {
+            "width": "78%",
+            "blockClass": "institucional-principal",
+            "verticalAlign": "top"
+        }
+    },
+    "rich-text#institucional-troca": {
+        "title": "Texto",
+        "props": {
+            "text": "# Política de Devolução \n\n\n ## Considerações Gerais ##  \n A devolução de qualquer produto só pode ser feita no prazo de até 7 (sete) dias. Nesse período, se o produto apresentar defeito, ou se você não estiver satisfeito(a) com a compra, comunique nosso setor de atendimento ao cliente e solicite a troca. \n\n Para trocar um produto, todas as seguintes condições deverão ser observadas - o produto deverá ser encaminhado na embalagem original, sem indícios de uso, sem violação do lacre original do fabricante, acompanhado da DANFE, do manual e todos os acessórios. \n\n O produto será coletado pela transportadora, no mesmo local de entrega, durante os 5 dias úteis seguintes à requisição. As coletas são feitas de segunda-feira a sexta-feira, das 8h às 17h. \n\n Caso não haja serviço de coleta residencial disponível para região solicitada, nossos atendentes encaminharão uma Autorização de Postagem e o respectivo código para que seja feito o envio do pacote em uma agência dos Correios, sem custo algum para o consumidor (IMPORTANTE: Agências dos Correios Franqueadas (ACF) não aceitam o uso do instrumento de habilitação de postagem.) \n\n É fundamental seguir as instruções: \n - Acondicione o produto em sua embalagem original ou similar; \n - Devolva todos os itens/acessórios que acompanham o produto; \n - Junte a segunda via do DANFE recebida no ato da entrega. É imprescindível que ele seja enviado para que o produto seja identificado; \n - Relate, no verso do DANFE, o motivo da devolução. \n\n\n\n Nós podemos também efetuar o procedimento em nossa loja física, dentro do horário de funcionamento informado, caso o cliente se dirija com o pacote dentro das condições acima. \n\n ## Restituição do valor pago ## \n\n Em aquisições pagas com cartão de crédito, a administradora do cartão será notificada e o estorno ocorrerá no encerramento da fatura aberta ou na posterior, de acordo com os critérios da financeira. O cancelamento é feito integralmente, independentemente da quantidade de parcelas da compra. \n\n Em compras pagas com boleto bancário ou débito em conta, a restituição será efetuada por meio de depósito bancário, em até 15 (quinze) dias úteis, somente na conta corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF do titular da conta corrente seja o mesmo que consta no pedido (CPF do cliente). A restituição dos valores será processada somente após o recebimento, análise e liberação dos produtos no Centro de Distribuição.",
+            "blockClass": "content-page-institucional"
+        }
+    } 
+}

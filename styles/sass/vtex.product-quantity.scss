@@ -1,0 +1,42 @@
+.quantitySelectorTitle {  
+    font-size: 0;
+    margin-top: 5px;
+    &::after{
+        content: "Selecione a quantidade:";
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $textColor; 
+    }
+}
+:global(.vtex-numeric-stepper__minus-button__text){
+    font-size: 0;
+    &::before {
+        content: url('data:image/svg+xml,%3Csvg%20width%3D%2225%22%20height%3D%2225%22%20viewBox%3D%220%200%2025%2025%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220.499512%22%20y%3D%220.5%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%2212%22%20stroke%3D%22%233D3D3D%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M4.78796%2012.9807C4.78796%2012.7046%205.01182%2012.4807%205.28796%2012.4807H19.711C19.9872%2012.4807%2020.211%2012.7046%2020.211%2012.9807C20.211%2013.2569%2019.9872%2013.4807%2019.711%2013.4807H5.28796C5.01182%2013.4807%204.78796%2013.2569%204.78796%2012.9807Z%22%20fill%3D%22%233D3D3D%22%2F%3E%3C%2Fsvg%3E');
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+}
+:global(.vtex-numeric-stepper__plus-button__text){
+    font-size: 0;
+    &::before {
+        content: url('data:image/svg+xml,%3Csvg%20width%3D%2225%22%20height%3D%2225%22%20viewBox%3D%220%200%2025%2025%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220.499512%22%20y%3D%220.5%22%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%2212%22%20stroke%3D%22%233D3D3D%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M12.9995%204.80762C12.9995%204.53147%2012.7757%204.30762%2012.4995%204.30762C12.2234%204.30762%2011.9995%204.53147%2011.9995%204.80762L11.9995%2012H4.8072C4.53106%2012%204.3072%2012.2238%204.3072%2012.5C4.3072%2012.7761%204.53106%2013%204.8072%2013H11.9995V20.1922C11.9995%2020.4684%2012.2234%2020.6922%2012.4995%2020.6922C12.7757%2020.6922%2012.9995%2020.4684%2012.9995%2020.1922L12.9995%2013H20.1918C20.468%2013%2020.6918%2012.7761%2020.6918%2012.5C20.6918%2012.2238%2020.468%2012%2020.1918%2012H12.9995V4.80762Z%22%20fill%3D%22%233D3D3D%22%2F%3E%3C%2Fsvg%3E');
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+}
+:global(.vtex-numeric-stepper__plus-button),:global(.vtex-numeric-stepper__minus-button) {
+    background-color: transparent;
+    border: 0;
+    width: fit-content !important;
+}
+:global(.vtex-numeric-stepper__input){
+    border: 0;
+    font-size: 1rem;
+    width: 50px;
+    outline: none;
+}
+.quantitySelectorContainer {
+    margin-bottom: 0;
+}

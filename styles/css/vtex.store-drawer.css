@@ -1,0 +1,120 @@
+@charset "UTF-8";
+.openIconContainer--menu-header {
+  padding: 0;
+}
+
+.openIconContainer--menu-header .menuIcon {
+  display: none;
+}
+
+.openIconContainer--menu-header::before {
+  content: url(/arquivos/logo_hamburger_panda.svg);
+}
+
+.childrenContainer--menu-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-profile) {
+  max-width: 80%;
+  color: #3D3D3D;
+  display: block;
+  text-align: left;
+  padding: 0;
+  font-size: 18px;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-profile)::after {
+  content: "Minha conta";
+  color: #3D3D3D;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-container) {
+  border-bottom: #3d3d3d 1px solid;
+  margin: 0 20px;
+  padding: 25px 0 15px;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-container)::before {
+  content: url(/arquivos/profile_user-mobile.svg);
+  margin-right: 5px;
+}
+
+.childrenContainer--menu-header :global(.vtex-button__label) {
+  padding: 0 10px !important;
+  width: 100%;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-label) {
+  display: block !important;
+  font-size: 0;
+  padding: 0;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-label)::before {
+  content: "Olá, visitante";
+  color: #3D3D3D;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+}
+
+.childrenContainer--menu-header :global(.vtex-login-2-x-label)::after {
+  content: "Entre ou cadastre-se";
+  color: #3D3D3D;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.drawerContent--menu-header .closeIconContainer, .drawerContent--order-by-drawer .closeIconContainer, .drawerContent--search .closeIconContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.drawerContent--menu-header .closeIconButton, .drawerContent--order-by-drawer .closeIconButton, .drawerContent--search .closeIconButton {
+  color: #333;
+}
+
+.childrenContainer--search {
+  padding: 40px 20px 20px;
+}
+
+.openIconContainer--search {
+  padding: 0;
+}
+
+.openIconContainer--order-by-drawer {
+  border: 1px solid #3d3d3d;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.openIconContainer--order-by-drawer :global(.vtex-rich-text-0-x-paragraph) {
+  font-weight: 600;
+}
+
+.openIconContainer--order-by-drawer :global(.vtex-rich-text-0-x-paragraph)::before {
+  content: url(/arquivos/icon-orderBy-mob.png);
+}
+
+.drawerContent--order-by-drawer::before {
+  content: "Ordenar por";
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 40px 20px 20px;
+  border-bottom: 1px solid #3d3d3d;
+  padding: 10px 0;
+}

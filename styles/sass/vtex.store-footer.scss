@@ -1,0 +1,5 @@
+.footerLayout{
+    @include mobile{
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,341 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "helmet",
+      "itens-com-sessao",
+      "flex-layout.row#header-supertopo",  
+      "sticky-layout#header-main-desktop",
+      // "flex-layout.row#header-main-desktop",
+      "flex-layout.row#header-nav-desktop",
+      "whatsapp-flutuante"
+    ]
+  }, 
+    
+  "sticky-layout#header-main-desktop": {
+    "title": "Topo fixo",
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#header-main-desktop"]
+  },
+  "flex-layout.row#header-main-desktop": {
+    "title": "Linha 1",
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "between",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true 
+    },
+    "children": [
+      "flex-layout.col#header-main-desktop-1",  
+      "flex-layout.col#header-main-desktop-2", 
+      "flex-layout.col#header-main-desktop-3", 
+      "flex-layout.col#header-main-desktop-4"
+    ]
+  },
+
+  "flex-layout.col#header-main-desktop-1": {
+    "title": "Logo",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+
+  "flex-layout.col#header-main-desktop-2": {
+    "title": "Busca",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "search-header"
+    },
+    "children": ["search-bar"]
+  },
+  "search-bar":{
+    "props": {
+      "placeholder": "O que você procura hoje?"
+    }
+  },
+  "flex-layout.col#header-main-desktop-3": {
+    "title": "Modal Lojas",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["modal-trigger#header-lojas"]
+  },
+  "flex-layout.col#header-main-desktop-4": {
+    "title": "Login e Carrinho",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": ["items-center","direction-row","header-icon"]
+    },
+    "children": [ 
+      "login", 
+      "minicart.v2#header"
+    ]
+  },
+  
+  "minicart.v2#header":{
+    "title": "Carrinho",
+    "props": {
+      "variation": "link"
+    }
+  },  
+  "flex-layout.row#header-nav-desktop": {
+    "title": "Menu",
+    "children": [ 
+      "menu-custom#header" 
+    ],
+    "props": {
+      "blockClass": "header-nav"
+    }
+  }, 
+    "menu-custom#header":{
+      "title": "Menu Header",
+      "props": { 
+        "menuLinks": [
+          { 
+            "text": "Aramados",  
+            "url": "/aramados"
+          }
+        ]
+      }
+    },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/imgs/varotti_logo.png",
+      "width": "100",
+      "height": "100"
+    }
+  },
+
+
+  "header-layout.mobile": {
+    "title": "Header Mobile",
+    "children": [
+      "helmet", 
+      "itens-com-sessao",
+      "whatsapp-flutuante", 
+      "flex-layout.row#footer-fixo-mobile",
+      "flex-layout.row#header-supertopo-mobile",
+      "sticky-layout#1-mobile" 
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"],
+    "props": {
+      "blockClass": "sticky-header"
+    }
+  },
+  "flex-layout.row#1-mobile": {
+    "title": "Linha 1",
+    "children": [
+      "drawer#menu-header",
+      "logo#mobile",  
+      "minicart.v2#header"
+    ],
+    "props": {
+      "blockClass": ["main-header-mobile", "items-center"],
+      "horizontalAlign": "between", 
+      "paddingTop": 3,
+      "paddingBottom": 3, 
+      "preserveLayoutOnMobile": true 
+    }
+  }, 
+  "drawer#menu-header": {
+    "children": [
+      "login",
+      "flex-layout.row#lew-drawer-mobile", 
+      "menu-custom#header"
+    ],
+    "props":{
+      "blockClass": "menu-header"
+    }
+  },  
+
+  "logo#mobile": {
+    "title": "Logo",
+    "props": {
+      "href": "/",
+      "url": "assets/imgs/varotti_logo.png",
+      "width": "75",
+      "height": "75"
+    }
+  },
+  
+  "flex-layout.row#lew-drawer-mobile": {
+    "title": "Loja e WhatsApp",
+    "children": [
+      "modal-trigger#header-lojas",
+      "rich-text#drawer-wp-header" 
+    ],
+    "props": {
+      "blockClass": ["items-center", "loja-e-wp-mobile"],
+      "horizontalAlign": "between", 
+      "preventHorizontalStretch": true,
+      "paddingTop": 3,
+      "paddingBottom": 3, 
+      "preserveLayoutOnMobile": true 
+    }
+  },
+  
+  "rich-text#drawer-wp-header": {
+    "title": "Entre em contato",
+    "props": {
+      "text": "<a href='https://api.whatsapp.com/send?phone=551138516875' target='_blank' title='Entre em contato pelo whatsapp' class='vtex-rich-text-0-x-strong--entre-em-contato'>Entre em contato</a>",
+      "blockClass": "entre-em-contato"
+    }
+  },
+
+
+
+
+
+
+
+
+ 
+  "flex-layout.row#footer-fixo-mobile": {
+    "children": [
+      "flex-layout.col#footer-fixo-mobile-1",
+      "flex-layout.col#footer-fixo-mobile-2",
+      "flex-layout.col#footer-fixo-mobile-3",
+      "flex-layout.col#footer-fixo-mobile-4"
+    ],
+    "props": { 
+      "preserveLayoutOnMobile": true,
+      "blockClass": ["footer-fixo-mobile"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#footer-fixo-mobile-1": {
+    "children": [  
+      "image#footer-fixo-mobile-1",
+      "rich-text#footer-fixo-title-mobile-1"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": ["footer-fixo-mobile","footer-fixo-mobile-1"]
+    }
+  },
+  "rich-text#footer-fixo-title-mobile-1": {
+    "title": "Título",
+    "props": {
+      "text": "Menu",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margin-0","text-white"]
+    }
+  },
+  "image#footer-fixo-mobile-1": {
+    "title": "Icone",
+    "props": {
+      "src": "/arquivos/hambuger_menu-footer.png" 
+    }
+  },
+
+  
+  "flex-layout.col#footer-fixo-mobile-2": {
+    "children": [
+      "drawer#search"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "footer-fixo-mobile"
+    }
+  }, 
+  
+  "drawer#search": {
+    "children": ["search-bar"],
+    "props":{
+      "blockClass": "search"
+    },
+    "blocks": ["drawer-trigger#search"]
+  },
+  
+  "drawer-trigger#search": {
+    "children": [ 
+      "image#footer-fixo-mobile-2",
+      "rich-text#footer-fixo-title-mobile-2"
+    ]
+  },
+  "rich-text#footer-fixo-title-mobile-2": {
+    "title": "Título",
+    "props": {
+      "text": "Busca",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margin-0","text-white"]
+    }
+  },
+  "image#footer-fixo-mobile-2": {
+    "title": "Icone",
+    "props": {
+      "src": "/arquivos/search_menu-footer.png" 
+    }
+  },
+
+  
+  "flex-layout.col#footer-fixo-mobile-3": {
+    "children": [
+      "image#footer-fixo-mobile-3",
+      "rich-text#footer-fixo-title-mobile-3"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "footer-fixo-mobile"
+    }
+  },
+  "rich-text#footer-fixo-title-mobile-3": {
+    "title": "Título",
+    "props": {
+      "text": "[Perfil](/account)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margin-0","text-white"]
+    }
+  },
+  "image#footer-fixo-mobile-3": {
+    "title": "Icone",
+    "props": {
+      "src": "/arquivos/account_menu-footer.png" 
+    }
+  },
+
+  
+  "flex-layout.col#footer-fixo-mobile-4": {
+    "children": [
+      "image#footer-fixo-mobile-4",
+      "rich-text#footer-fixo-title-mobile-4"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "footer-fixo-mobile"
+    }
+  },
+  "rich-text#footer-fixo-title-mobile-4": {
+    "title": "Título",
+    "props": {
+      "text": "[Carrinho](/checkout/#/cart)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margin-0","text-white"]
+    }
+  },
+  "image#footer-fixo-mobile-4": {
+    "title": "Icone",
+    "props": {
+      "src": "/arquivos/cart_menu-footer.png" 
+    }
+  }
+
+}

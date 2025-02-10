@@ -1,0 +1,125 @@
+.galleryTitle--layout{ 
+    text-align: center; 
+    font-size: 1.5rem; 
+    @include mobile{
+        margin: 35px 0 5px;
+    }
+}
+.galleryItem--grid{
+    padding: 0;
+}
+.orderByButton {
+    background-color: transparent;
+    @include mobile{
+        display: none;
+    }
+}
+.orderBy--layout{ 
+    @include mobile{ 
+        width: 100%;
+    }
+}
+.orderByOptionsContainer { 
+    @include mobile{
+        display: block !important;
+        width: 100%;
+        position: unset;
+        box-shadow: unset;
+        border: 0;
+        padding: 0 20px;
+        .orderByOptionItem{
+            border-bottom: 1px solid #dce3e5;
+            text-align: center;
+        }
+    }
+}
+.totalProducts--layout{
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include desktop{
+        text-align: left;
+    }
+}
+.totalProductsMessage {
+    text-transform: lowercase;
+    color: initial;
+    &::after{
+        content: " encontrados";
+    }
+} 
+.gallery {
+    padding: 0;
+    :global(.vtex-product-summary-2-x-container){
+        @include mobile{
+            padding: 0 5px 40px 5px;
+        }
+    }
+}
+.filterTitleSpan{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+.filterMessage {
+    display: none;
+}
+.filtersWrapper{
+  margin-top: 98px;
+}
+.filterTemplateOverflow {
+    &::-webkit-scrollbar-track{
+        background-color: #ffffff;
+    }
+    &::-webkit-scrollbar{
+        width: 6px;
+        background: $primaryColor;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $primaryColor;
+        border-radius: 10px;
+    }
+}
+.filtersWrapperMobile{
+    .filterPopupButton{
+        width: 100%;
+        margin: -6px 0 0 0;
+        padding: 0;
+    }
+    .filterPopupTitle{
+        width: 100%;
+        border: 1px solid #3d3d3d;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin: 0;
+        font-weight: 600;
+        &::before{
+            content: url(/arquivos/icon-filter-mob.png);
+        }
+    }
+    .filterPopupArrowIcon{
+        display: none;
+    }
+}
+
+.filterApplyButtonWrapper{
+    :global(.vtex-button__label){
+        color: white;
+    }
+}
+.galleryItem {
+    position: relative;
+    :global(.vtex-rich-text-0-x-paragraph--flag-cashback){
+        font-size: 11px; 
+        padding: 2px 3px 1px;
+        letter-spacing: -0.5px;
+    }
+    :global(.vtex-product-price-1-x-spotPriceSavings--summary-flag-desconto){
+        font-size: 11px; 
+        padding: 2px 3px 1px;
+        letter-spacing: -0.5px;
+    }
+}

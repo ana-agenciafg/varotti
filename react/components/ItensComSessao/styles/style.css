@@ -1,0 +1,170 @@
+.box_cookies{ 
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    gap: 20px;
+    left: 5%;
+    padding: 20px 35px;
+    bottom: 20px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    z-index: 99;
+}
+.box_cookies:global(.visible){
+    display: flex !important;
+}
+@media (max-width: 700px){
+    .box_cookies{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.box_cookies_txt{
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+.box_cookies_txt :global(a){ 
+    font-weight: 700;
+    color: #3D3D3D;
+}
+.box_cookies_btn{ 
+    background: transparent;
+    border: 1px solid #3D3D3D;
+    font-size: 12px;
+    padding: 9px 15px;
+    height: fit-content;
+    cursor: pointer; 
+}
+.box_cookies_btn:hover{
+    background: #3D3D3D;
+    color: white;
+}
+@media (max-width: 700px){
+    .box_cookies_btn{  
+        width: 100%; 
+    }
+}
+.popupcupom{
+    position: fixed;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+}
+.popupcupom:global(.visible){
+    display: block !important;
+}
+.popupcupom_sombra{
+    position: absolute;
+    left: 0;
+    top: 0;    
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; 
+}
+.popupcupom_conteudo{
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 690px;
+    max-width: 90%;
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.popupcupom_img{
+    margin-bottom: -3px;
+}
+@media (max-width: 700px){
+    .popupcupom_img{
+        display: none;
+    }
+}
+.popupcupom_txts{
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+@media (min-width: 701px){
+    .popupcupom_txts{
+        width: calc(100% - 200px);
+    }
+}   
+.popupcupom_titulo{
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0; 
+    color: #3D3D3D; 
+    font-weight: 700;
+}
+.popupcupom_titulo :global(span){
+    color: #931D1E;
+}
+@media (max-width: 700px){
+    .popupcupom_titulo{
+        font-size: 32px;
+    }
+}
+.popupcupom_subtitulo{
+    font-size: 24px; 
+    color: #3D3D3D;
+    margin: 5px 0;
+    font-weight: 700;
+}
+@media (max-width: 700px){
+    .popupcupom_subtitulo{
+        font-size: 18px;
+    }
+}
+.popupcupom_descricao{
+    font-size: 16px;
+    color: #3D3D3D;
+    margin-top: 40px;
+    margin-bottom: 25px; 
+}
+.popupcupom_fechar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+} 
+.popupcupom_span{
+    background-color: #931D1E;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 15px; 
+    border-radius: 15px 0px 0px 15px; 
+}
+.popupcupom_copiar{
+    background: #FFFFFF;
+    color: #931D1E;
+    border: 1px solid #931D1E;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 7px 10px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+.popupcupom_copiar::before{
+    content: url(/arquivos/copia-panda.png);
+}
+.popupcupom_boxcupom{
+    display: flex;
+    justify-content: center;
+}

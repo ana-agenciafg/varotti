@@ -1,0 +1,41 @@
+{ 
+    "store.custom#institucional-pagamento": {
+        "children": ["flex-layout.row#institucional-pagamento"]
+    },  
+    "flex-layout.row#institucional-pagamento": { 
+        "title": "Conteúdo principal", 
+        "props": {
+            "marginTop": 8,
+            "marginBottom": 10,
+            "horizontalAlign": "between"
+        },
+        "children": [
+            "responsive-layout.desktop#menu-lateral-institucionais-desktop",
+            "flex-layout.col#institucional-pagamento"
+        ]
+    }, 
+
+    "flex-layout.col#institucional-pagamento": {
+        "title": "Texto",
+        "children": ["rich-text#institucional-pagamento","image#institucional-pagamento-imagem"],
+        "props": {
+            "width": "78%",
+            "blockClass": "institucional-principal",
+            "verticalAlign": "top"
+        }
+    },
+    "rich-text#institucional-pagamento": {
+        "title": "Texto",
+        "props": {
+            "text": "# Formas de Pagamento \n\n Entenda abaixo as especificidades de cada modalidade. Em quaisquer condições, o pedido será liberado somente após a confirmação do pagamento pela instituição financeira. Assim, em caso de dúvidas sobre o status do pedido ou inconsistências encontradas, entre em contato conosco. \n\n ## Boleto Bancário ## \n Esta opção está disponível apenas para pagamento à vista, não aceitando a modalidade de parcelamento. A data de vencimento do boleto é de 5 dias corridos após a geração em nosso sistema. Ele pode ser pago em qualquer estabelecimento bancário (incluso casas lotéricas) até a data especificada. Caso seja superado o prazo limite, o pedido vinculado ao título será automaticamente cancelado. Em caso de alguma eventualidade que não seja possível realizar o pagamento, entre em contato com nossa central de atendimento para sanarmos o problema. \n\n ## Cartão de Débito ## \n Modalidade que efetua a transação de imediato, sem necessidade de o cliente abrir o internet banking, exigindo apenas as informações da conta vinculada ao cartão (dados impressos). É necessário que o banco do portador tenha liberado esse recurso para conta utilizada. A instituição financeira gestora da conta realiza uma análise de risco com base no perfil do usuário para aprovar o pedido. Caso não consiga efetuar a transação, entre em contato conosco e solicite mais informações. \n\n ## Cartão de Crédito ## \n Dividimos sua compra em até 6 vezes sem juros no cartão de crédito. As opções de parcelamento disponíveis no site são divergentes daquelas oferecidas na loja física, não sendo possível replicar condições. A disponibilidade de parcelas é proporcional ao valor final e será informado no fechamento do pedido. É possível realizar o pagamento em mais de um cartão, desde que ambos façam parte das bandeiras disponíveis. Por motivo de segurança, as compras nessa modalidade passam por análise de risco e confirmação de dados. Em caso de compras com cartão de terceiros, podemos entrar em contato para confirmar a veracidade das informações. ",
+            "blockClass": "content-page-institucional"
+        }
+    },
+    
+    "image#institucional-pagamento-imagem": {
+        "title": "Imagem",
+        "props": {
+            "src": "assets/imgs/formas-de-pagamento.jpg" 
+        }
+    }
+}

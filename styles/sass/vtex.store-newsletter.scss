@@ -1,0 +1,51 @@
+.newsletterForm{
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto 0;
+        max-width: 80%;
+    }
+    .nameInputContainer,.emailInputContainer{
+        width: 100%;        
+    }
+    :global(.vtex-input__label ){
+        background-color: transparent;
+        color: white;
+        font-weight: 600; 
+        margin: 5px;
+        @include mobile{
+            display: none;
+        }
+    }
+    :global(.vtex-input__error){
+        color: white;
+        position: absolute;
+    }
+    :global(.vtex-button ){
+        background-color: transparent;
+        color: white; 
+        border: 1px solid white;
+        font-weight: 700;
+        font-size: 0.875rem; 
+    }
+    :global(.vtex-input-prefix__group){
+        border: 0; 
+    }
+    :global(.vtex-styleguide-9-x-input){
+        height: 40px;
+        padding: 0 10px;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        font-size: 0.875rem; 
+    }
+}
+.defaultSuccessMessage{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}

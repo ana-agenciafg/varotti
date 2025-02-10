@@ -1,0 +1,152 @@
+{ 
+    "flex-layout.row#header-supertopo-mobile": { 
+        "children": ["slider-layout#supertopo-mobile"],
+        "props":{
+            "blockClass": "header-supertopo"
+        }
+    }, 
+    "slider-layout#supertopo-mobile": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "autoplay": {
+            "timeout": 5000,
+            "stopOnHover": true
+          },
+          "showPaginationDots": false,
+          "showNavigationArrows": "never"
+        },
+        "children": [
+            "flex-layout.col#header-supertopo-1",
+            "flex-layout.col#header-supertopo-2",
+            "flex-layout.col#header-supertopo-3",
+            "flex-layout.col#header-supertopo-4"
+        ]
+      }, 
+    
+    "flex-layout.row#header-supertopo": {
+        "title": "Frases Super Topo",
+        "children": [
+            "flex-layout.col#header-supertopo-1",
+            "flex-layout.col#header-supertopo-2",
+            "flex-layout.col#header-supertopo-3",
+            "flex-layout.col#header-supertopo-4"
+        ],
+        "props": {
+            "blockClass": "header-supertopo",
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "between"
+        }
+    },
+
+    "flex-layout.col#header-supertopo-1": {
+        "title": "Coluna 1",
+        "props": {            
+            "blockClass": ["supertopo-item", "direction-row"],            
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "image#header-supertopo-1",
+            "rich-text#header-supertopo-1"
+        ]
+    },
+    "image#header-supertopo-1": {
+        "title": "Icone",
+        "props": {
+            "src": "assets/imgs/icones/pix-benefits.svg",
+            "blockClass": "margin-right-5"
+        }
+    },
+    "rich-text#header-supertopo-1": {
+        "title": "Frase",
+        "props": {
+            "text": "**5% de desconto** no Pix",
+            "blockClass": ["margin-0", "text-white"]
+        }
+    },
+
+    
+    "flex-layout.col#header-supertopo-2": {
+        "title": "Coluna 2",
+        "props": {            
+            "blockClass": ["supertopo-item", "direction-row"],            
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "image#header-supertopo-2",
+            "rich-text#header-supertopo-2"
+        ]
+    },
+    "image#header-supertopo-2": {
+        "title": "Icone",
+        "props": {
+            "src": "assets/imgs/icones/frete-benefits.svg",
+            "blockClass": "margin-right-5"
+        }
+    },
+    "rich-text#header-supertopo-2": {
+        "title": "Frase",
+        "props": {
+            "text": "Entrega em **1 dia útil** para a Grande São Paulo",
+            "blockClass": ["margin-0", "text-white"]
+        }
+    },
+
+    
+    "flex-layout.col#header-supertopo-3": {
+        "title": "Coluna 3",
+        "props": {            
+            "blockClass": ["supertopo-item", "direction-row"],            
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "image#header-supertopo-3",
+            "rich-text#header-supertopo-3"
+        ]
+    },
+    "image#header-supertopo-3": {
+        "title": "Icone",
+        "props": {
+            "src": "assets/imgs/icones/card-benefits.svg",
+            "blockClass": "margin-right-5"
+        }
+    },
+    "rich-text#header-supertopo-3": {
+        "title": "Frase",
+        "props": {
+            "text": "**12x** sem juros",
+            "blockClass": ["margin-0", "text-white"]
+        }
+    },
+
+    
+    "flex-layout.col#header-supertopo-4": {
+        "title": "Coluna 4",
+        "props": {            
+            "blockClass": ["supertopo-item", "direction-row"],            
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "image#header-supertopo-4",
+            "rich-text#header-supertopo-4"
+        ]
+    },
+    "image#header-supertopo-4": {
+        "title": "Icone",
+        "props": {
+            "src": "assets/imgs/icones/phone-benefits.svg",
+            "blockClass": "margin-right-5"
+        }
+    },
+    "rich-text#header-supertopo-4": {
+        "title": "Frase",
+        "props": {
+            "text": "**Fale conosco:** (11) 3851-6875",
+            "blockClass": ["margin-0", "text-white"]
+        }
+    }
+}

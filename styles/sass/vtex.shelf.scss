@@ -1,0 +1,20 @@
+.arrow {
+    .caretIcon{
+        display: none;
+    }
+}
+.arrowLeft { 
+    margin-left: -18px;
+    &::before{
+        content: url(assets/imgs/icones/arrow_left-home.png) !important;
+    }
+}
+.arrowRight{
+    margin-right: -18px;
+    &::before{
+        content: url(assets/imgs/icones/arrow_rigth-home.png) !important; 
+    }
+} 
+.title {
+    padding: 0;
+}

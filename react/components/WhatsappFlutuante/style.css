@@ -1,0 +1,12 @@
+.whatsappflutuante{
+    position: fixed;
+    bottom: calc(30% - 80px);
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+@media (min-width: 701px){
+    .whatsappflutuante{ 
+        bottom: 5%; 
+    }
+}

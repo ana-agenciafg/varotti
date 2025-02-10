@@ -1,0 +1,33 @@
+{ 
+  "flex-layout.row#aviso-de-frete-fixo": {
+    "title": "Aviso Fixo na Lateral",
+    "children": ["flex-layout.col#aviso-de-frete-fixo"],
+    "props": { 
+      "colSizing": "auto",
+      "blockClass": "aviso-de-frete-fixo"
+    }
+  },
+  "flex-layout.col#aviso-de-frete-fixo": { 
+    "children": [
+      "rich-text#aviso-de-frete-fixo-titulo",
+      "rich-text#aviso-de-frete-fixo-descricao"
+    ],
+    "props": { 
+      "verticalALign": "center"
+    }
+  },
+  "rich-text#aviso-de-frete-fixo-titulo": {
+    "title": "Título",
+    "props": {
+      "text": "**Frete Grátis**",
+      "blockClass": ["aviso-de-frete-fixo-titulo", "margin-0"]
+    }
+  },
+  "rich-text#aviso-de-frete-fixo-descricao": {
+    "title": "Descrição",
+    "props": {
+      "text": "para a Grande São Paulo, em compras acima de R$300 \n Válido apenas para produtos de até 1 metro",
+      "blockClass": ["aviso-de-frete-fixo-descricao", "margin-0"]
+    }
+  } 
+}

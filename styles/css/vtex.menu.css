@@ -1,0 +1,12 @@
+.menuContainerNav--footer-menu .styledLinkContainer {
+  padding: 8px 0;
+  margin: 0;
+}
+.menuContainerNav--footer-menu .styledLinkContainer .styledLinkContent {
+  font-size: 1rem;
+}
+@media (max-width: 769px) {
+  .menuContainerNav--footer-menu .styledLinkContainer .styledLinkContent {
+    font-size: 0.875rem;
+  }
+}

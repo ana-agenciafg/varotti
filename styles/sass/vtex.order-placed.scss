@@ -1,0 +1,10 @@
+.orderPlacedWrapper {
+    padding-bottom: 150px;
+    :global(.vtex-button__label){
+      color: white;
+    }
+    :global(.vtex-button):hover{
+      background-color: #931d1e;
+      opacity: .9
+    }
+}

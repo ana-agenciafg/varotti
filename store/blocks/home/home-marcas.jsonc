@@ -1,0 +1,83 @@
+{
+  "flex-layout.row#home-marcas": {
+		"title": "Marcas",
+    "props":{       
+      "horizontalAlign": "between",
+      "blockClass": "bg-white",
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "colGap": 9
+    },
+    "children": [
+			"flex-layout.col#home-marcas-text",
+			"flex-layout.col#home-marcas-imgs"
+		]
+  },
+  "flex-layout.col#home-marcas-text": {
+		"title": "Coluna Título",
+    "children": ["rich-text#home-marcas-text"],
+    "props": {      
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#home-marcas-text": {
+		"title": "Título",
+    "props": {
+      "text": "## NOSSOS **DESTAQUES**",
+      "blockClass": "title-type-one",
+      "font": "t-heading-2" 
+    }
+  },
+  "flex-layout.col#home-marcas-imgs": {
+		"title": "Coluna Imagens",
+    "children": ["list-context.image-list#home-marcas"],
+    "props": {
+      "width": "70%"
+    }
+  },
+  "list-context.image-list#home-marcas": { 
+		"title": "Imagens",
+    "children": ["slider-layout#home-marcas"],
+    "props": { 
+      "preload": true,
+      "images": [
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/197060/Marcas_FGV.png",
+          "mobileImage": "https://varotti.vteximg.com.br/arquivos/ids/197060/Marcas_FGV.png"
+        },
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/197064/Marcas_vonder.png",
+          "mobileImage": "https://varotti.vteximg.com.br/arquivos/ids/197064/Marcas_vonder.png"
+        },
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/197061/Marcas_freud.png",
+          "mobileImage": "https://varotti.vteximg.com.br/arquivos/ids/197061/Marcas_freud.png"
+        },
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/197058/Marcas_blum.png",
+          "mobileImage": "https://varotti.vteximg.com.br/arquivos/ids/197058/Marcas_blum.png"
+        },
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/197059/Marcas_bosch.png",
+          "mobileImage": "https://varotti.vteximg.com.br/arquivos/ids/197059/Marcas_bosch.png"
+        },
+        {
+          "image": "https://varotti.vteximg.com.br/arquivos/ids/197063/Marcas_masutti.png",
+          "mobileImage": "https://varotti.vteximg.com.br/arquivos/ids/197063/Marcas_masutti.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-marcas": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 4
+      },
+      "showPaginationDots": false,
+      "blockClass": "home-marcas",
+      "infinite": true
+    }
+  }
+}

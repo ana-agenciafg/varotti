@@ -1,0 +1,6 @@
+.homeLink .homeIcon {
+  display: none;
+}
+.homeLink::before {
+  content: "Varotti";
+}

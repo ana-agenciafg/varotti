@@ -1,0 +1,24 @@
+{
+    "store.custom#contato": {
+        "children": ["flex-layout.row#page-contato"]
+    },  
+    "flex-layout.row#page-contato": { 
+        "title": "Conteúdo principal",
+        "children": [
+            "rich-text#page-contato",
+            "formulario-contato"
+        ],
+        "props": {
+            "marginTop": 7,
+            "marginBottom": 10,
+            "blockClass": ["page-contato","direction-column"]
+        }
+    },
+    "rich-text#page-contato": {
+        "title": "Título e descrição",
+        "props": {
+            "text": "# FALE CONOSCO \n Preencha o formulário abaixo para entrar em contato conosco.",
+            "blockClass": "page-contato"
+        }
+    }
+}

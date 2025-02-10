@@ -1,0 +1,110 @@
+{ 
+  "flex-layout.row#product-breadcrumb": {
+      "props": {
+        "marginTop": 4,
+        "blockClass": "product-breadcrumb"
+      },
+      "children": ["breadcrumb"]
+  },
+  
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  "responsive-layout.desktop#product-name-desktop": {
+    "children": ["flex-layout.row#product-name-desktop"]
+  },
+  "responsive-layout.mobile#product-name-mobile": {
+    "children": ["flex-layout.row#product-name-mobile"]
+  }, 
+  "flex-layout.row#product-name-desktop": {
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "left",
+      "blockClass": "product-name", 
+      "marginTop": 6,
+      "marginBottom": 4
+    },
+    "children": ["name-product"]
+  },
+  "flex-layout.row#product-name-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "left",
+      "blockClass": "product-name", 
+      "marginTop": 6,
+      "marginBottom": 4
+    },
+    "children": ["name-product"]
+  },
+  "flex-layout.row#product-topo-infos": {
+    "props": { 
+      "marginBottom": 6,
+      "colSizing": "auto",
+      "horizontalAlign": "left",
+      "colGap": 7,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "items-center" 
+    },
+    "children": [
+      "product-identifier.product#custom",
+      "rich-text#pdp-ver-avaliacoes",
+      "responsive-layout.desktop#modalcompartilhar-desktop"
+    ]
+  },
+  
+  "product-identifier.product#custom": {
+    "props": {  
+      "idField": "skuReferenceId" 
+    }
+  },
+  "responsive-layout.desktop#modalcompartilhar-desktop": {
+    "children": ["modal-trigger#modalcompartilhar"]
+  },
+  "modal-trigger#modalcompartilhar": {
+    "children": [
+      "rich-text#modalcompartilhar", "modal-layout#modalcompartilhar"
+    ],
+    "props": {
+      "blockClass": "modalcompartilhar"
+    }
+  },
+  "rich-text#modalcompartilhar": {
+    "props": {
+      "text": "Compartilhar",
+      "blockClass": ["open-modal-compartilhar", "margin-0"],
+      "font": "t-small"
+    }
+  },
+  "modal-layout#modalcompartilhar": {
+    "children": ["modal-header", "share-product"],
+    "props": { 
+      "blockClass": "share-product"
+    }
+  },
+  
+  "rich-text#pdp-ver-avaliacoes": {
+    "props": {
+      "text": "Ver avaliações",
+      "blockClass": "margin-0",
+      "font": "t-small"
+    }
+  },
+
+  
+  "responsive-layout.mobile#product-share-mobile": {
+    "children": ["flex-layout.row#product-share-mobile"]
+  },
+  "flex-layout.row#product-share-mobile": {
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 4, 
+      "blockClass": ["product-share-mobile","direction-column"]
+    },
+    "children": [
+      "rich-text#modalcompartilhar",
+      "share-product"
+    ]
+  }
+}

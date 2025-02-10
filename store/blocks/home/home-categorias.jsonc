@@ -1,0 +1,145 @@
+{  
+  "responsive-layout.desktop#home-categorias-desktop": {
+    "title": "Categorias Desktop",
+    "children": ["flex-layout.row#home-categorias"]
+  },
+  "responsive-layout.mobile#home-categorias-mobile": {
+    "title": "Categorias Mobile",
+    "children": ["flex-layout.row#home-categorias-mobile"]
+  },
+  "flex-layout.row#home-categorias-mobile":{
+    "title": "Categorias de produtos",
+    "children": [
+      "flex-layout.row#home-categorias-title",
+      "slider-layout#home-categorias-imgs"
+    ],
+    "props": {  
+      "blockClass": ["direction-column","home-categorias-mobile"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home-categorias":{
+    "title": "Categorias de produtos",
+    "children": [
+      "flex-layout.row#home-categorias-title",
+      "flex-layout.row#home-categorias-imgs"
+    ],
+    "props": {  
+      "blockClass": "direction-column" ,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#home-categorias-title": {
+    "title": "Linha Título",
+    "children": ["rich-text#home-categorias-title"] 
+  },
+  "rich-text#home-categorias-title": {
+    "title": "Título",
+    "props": {
+      "text": "## Conheça nossos **produtos**",
+      "blockClass": "title-type-two",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "font": "t-heading-2" 
+    }
+  }, 
+  "flex-layout.row#home-categorias-imgs": {
+    "title": "Linha Imagens",
+    "children": [
+      "image#home-categorias-imgs-1",
+      "image#home-categorias-imgs-2",
+      "image#home-categorias-imgs-3",
+      "image#home-categorias-imgs-4",
+      "image#home-categorias-imgs-5",
+      "image#home-categorias-imgs-6"
+    ],
+    "props": {
+      "paddingTop": 4,
+      "blockClass": "home-categorias-imgs"
+    }
+  },
+    "image#home-categorias-imgs-1": {
+      "title": "Imagem 1",
+      "props": {
+        "src": "/arquivos/ids/201671/ferramentas-eletricas.png",
+        "width": "100%",
+        "link": {
+          "url": "/marcenaria/ferramentas-eletricas"
+        }
+      }
+    },
+    "image#home-categorias-imgs-2": {
+      "title": "Imagem 2",
+      "props": {
+        "src": "/arquivos/ids/184533/Aventos.png",
+        "width": "100%",
+        "link": {
+          "url": "/blum/aventos"
+        }
+      }
+    },
+    "image#home-categorias-imgs-3": {
+      "title": "Imagem 3",
+      "props": {
+        "src": "/arquivos/ids/201666/fresas.png",
+        "width": "100%",
+        "link": {
+          "url": "/marcenaria/fresas"
+        }
+      }
+    },
+    "image#home-categorias-imgs-4": {
+      "title": "Imagem 4",
+      "props": {
+        "src": "/arquivos/ids/201672/estruturas.png",
+        "width": "100%",
+        "link": {
+          "url": "/mobilia/estruturas"
+        }
+      }
+    },
+    "image#home-categorias-imgs-5": {
+      "title": "Imagem 5",
+      "props": {
+        "src": "https://varotti.vteximg.com.br/arquivos/ids/201674/organizadores.png",
+        "width": "100%",
+        "link": {
+          "url": "/marcenaria/ferramentas-eletricas"
+        }
+      }
+    },
+    "image#home-categorias-imgs-6": {
+      "title": "Imagem 6",
+      "props": {
+        "src": "/arquivos/ids/201673/escorredores.png",
+        "width": "100%",
+        "link": {
+          "url": "/aramados/escorredores"
+        }
+      }
+    },
+
+    
+  "slider-layout#home-categorias-imgs": {
+    "title": "Slide categorias de produtos",
+    "children": [
+      "image#home-categorias-imgs-1",
+      "image#home-categorias-imgs-2",
+      "image#home-categorias-imgs-3",
+      "image#home-categorias-imgs-4",
+      "image#home-categorias-imgs-5",
+      "image#home-categorias-imgs-6"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home-categorias-imgs",
+      "infinite": true
+    }
+  }
+}

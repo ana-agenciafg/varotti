@@ -1,0 +1,43 @@
+{ 
+    "store.custom#institucional-historia": {
+        "children": ["flex-layout.row#institucional-historia"]
+    },  
+    "flex-layout.row#institucional-historia": { 
+        "title": "Conteúdo principal", 
+        "props": {
+            "marginTop": 8,
+            "marginBottom": 10,
+            "horizontalAlign": "between"
+        },
+        "children": [
+            "responsive-layout.desktop#menu-lateral-institucionais-desktop",
+            "flex-layout.col#institucional-historia"
+        ]
+    }, 
+
+    "flex-layout.col#institucional-historia": {
+        "title": "Texto",
+        "children": ["rich-text#institucional-historia","image#institucional-historia-imagem"],
+        "props": {
+            "width": "78%",
+            "blockClass": "institucional-principal",
+            "verticalAlign": "top"
+        }
+    },
+    "rich-text#institucional-historia": {
+        "title": "Texto",
+        "props": {
+            "text": "# Nossa História \n\n A Marcenaria Varotti foi fundada em 1981 por Luiz Carlos Varotti, um marceneiro de alto nível de profissionalismo e mente visionária. O fundador, durante sua jornada profissional, percebeu que os marceneiros necessitavam de um lugar onde pudessem encontrar tudo para seus projetos e serviços. Compreendendo as demandas e complexidades do mercado, criou uma pequena loja em uma localidade de fácil acesso na Zona Norte da capital, próximo ao lar e agregado à marcenaria. Surge em 1991, a Varotti Comércio de Compensados e Ferragens. A partir de então, utilizando uma visão empreendedora, foi inovando constantemente e ampliando espaços, apesar das dificuldades enfrentadas. Com muito empenho e dedicação, construiu ao lado da família a loja que nos orgulhamos hoje. \n\n Desde o princípio adotando uma política séria e um relacionamento duradouro com seus clientes, a Varotti visa um atendimento personalizado, suprindo as necessidades individuais de cada profissional. E com essa postura, construímos relações de longa data com marceneiros, arquitetos e consumidores fiéis. Para cultivar esse bem, procuramos agregar conhecimento aos nossos colaboradores, para que eles possam passar o que há de melhor durante e após a venda. \n\n Incansavelmente, buscamos técnicas e tecnologias avançadas para atender a demanda de serviços, investindo constantemente no crescimento empresarial, que resulta em uma evolução mútua de nossos clientes profissionais. Maquinário de ponta e serviços de qualidade incomparável levam nossa reputação aos lares daqueles que nos procuram. \n\n E baseado na demanda do mercado, mantemos um estoque com milhares de produtos feitos pelos fabricantes mais conceituados da área. Com tudo para a confecção do móvel, desde a base até o acabamento, dispomos de uma amplitude de materiais que agradam a todos os gostos. Assim, nosso portifólio é constituído de ferragens de alto padrão para revolucionar qualquer ambiente, agregando sofisticação e praticidade à vida das pessoas.",
+            "blockClass": "content-page-institucional"
+        }
+    },
+    
+    "image#institucional-historia-imagem": {
+        "title": "Imagem",
+        "props": {
+            "src": "https://varotti.vteximg.com.br/arquivos/since1991black.png",
+            "width": 200,
+            "height": 40
+        }
+    }
+}

@@ -1,0 +1,26 @@
+:global(.share-title){ 
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+    @media (max-width: 700px){
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    :global(.share-title){  
+        display: none;
+    }
+}
+:global(.share-buttons){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+:global(.copy-link-button){
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    zoom: .9;
+    cursor: pointer;
+}

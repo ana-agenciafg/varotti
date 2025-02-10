@@ -1,0 +1,192 @@
+.listPriceValue .currencyContainer {
+  color: #757575;
+}
+@media (max-width: 769px) {
+  .listPriceValue .currencyContainer {
+    font-size: 0.75rem;
+  }
+}
+
+.spotPrice--price-pix {
+  color: #13A43E;
+}
+@media (min-width: 770px) {
+  .spotPrice--price-pix {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 769px) {
+  .spotPrice--price-pix {
+    font-size: 0.75rem;
+  }
+}
+.spotPrice--price-pix .currencyContainer {
+  font-weight: 700;
+}
+@media (min-width: 770px) {
+  .spotPrice--price-pix .currencyContainer {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 769px) {
+  .spotPrice--price-pix .currencyContainer {
+    font-size: 1rem;
+  }
+}
+
+.spotPrice--price-pix-pdp {
+  color: #13A43E;
+  font-size: 1.125rem;
+}
+.spotPrice--price-pix-pdp .currencyContainer {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.sellingPriceValue::before {
+  content: "ou ";
+}
+.sellingPriceValue .currencyContainer {
+  font-weight: 700;
+}
+
+.installments {
+  font-size: 0;
+}
+.installments::before {
+  content: " em ";
+}
+@media (min-width: 770px) {
+  .installments::before {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 769px) {
+  .installments::before {
+    font-size: 0.75rem;
+  }
+}
+.installments .installmentsNumber {
+  font-weight: 700;
+}
+.installments .installmentsNumber::after {
+  content: "x ";
+}
+@media (min-width: 770px) {
+  .installments .installmentsNumber::after {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 769px) {
+  .installments .installmentsNumber::after {
+    font-size: 0.75rem;
+  }
+}
+.installments .installmentValue {
+  font-weight: 700;
+}
+.installments .installmentValue::before {
+  content: " de ";
+  font-weight: normal;
+}
+@media (min-width: 770px) {
+  .installments .installmentValue::before {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 769px) {
+  .installments .installmentValue::before {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 770px) {
+  .installments .installmentValue, .installments .installmentsNumber {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 769px) {
+  .installments .installmentValue, .installments .installmentsNumber {
+    font-size: 0.75rem;
+  }
+}
+
+.spotPriceSavings--pdp-flag-desconto {
+  background-color: #13A43E;
+  font-weight: 700;
+  padding: 4px 7px;
+  color: #FFF;
+  font-size: 0.75rem;
+  position: relative;
+  top: -4px;
+  left: 15px;
+}
+.spotPriceSavings--pdp-flag-desconto .spotPriceSavingsPercentage {
+  color: #FFF;
+  font-size: 0.75rem;
+}
+
+.spotPriceSavings--summary-flag-desconto {
+  background: #13A43E;
+  color: #FFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 3px;
+  padding: 2px 6px;
+}
+
+.installments--summary {
+  margin-top: 5px;
+}
+.installments--summary::before {
+  content: " ou " !important;
+}
+.installments--summary .currencyContainer--summary {
+  color: #13A43E;
+}
+
+.installmentsListContainer--pdp-parcelamento-modal {
+  position: relative;
+  padding-top: 25px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.installmentsListContainer--pdp-parcelamento-modal::before {
+  content: "Parcela";
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 50%;
+  left: 0;
+}
+.installmentsListContainer--pdp-parcelamento-modal::after {
+  content: "Valor";
+  position: absolute;
+  text-align: center;
+  display: block;
+  top: 0;
+  width: 50%;
+  right: 0;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installments {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid #ECECEC;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installments::before {
+  display: none;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installmentsNumber {
+  margin-right: 40px;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installmentValue {
+  font-weight: 400;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installmentValue .currencyContainer {
+  font-weight: 700;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installmentValue::before {
+  display: none;
+}
+.installmentsListContainer--pdp-parcelamento-modal .installmentValue::after {
+  content: " sem juros";
+}

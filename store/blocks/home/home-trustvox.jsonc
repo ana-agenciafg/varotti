@@ -1,0 +1,40 @@
+{ 
+  "flex-layout.row#home-trustvox-title": {
+    "title": "Título Trustvox",
+    "children": [
+      "rich-text#home-trustvox-title",
+      "rich-text#home-trustvox-subtitle"
+    ],
+    "props": {
+      "blockClass": ["direction-column", "bg-white","home-trustvox-title"],
+      "paddingTop": 7
+    }
+  },
+  "rich-text#home-trustvox-title": {
+    "title": "Título",
+    "props": {
+      "text": "## Confiança e qualidade é na **Varotti**" ,
+      "blockClass": ["title-type-two","margin-0"],
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "font": "t-heading-2" 
+    }
+  }, 
+  "rich-text#home-trustvox-subtitle": {
+    "title": "Título",
+    "props": {
+      "text": "### Confira algumas avaliações de nossos clientes" ,
+      "blockClass": "trustvox-subtitle",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER" 
+    }
+  }, 
+  "flex-layout.row#home-trustvox":{
+    "title": "Trustvox", 
+    "children": ["colt-ratrustvox"],
+    "props": {       
+      "paddingBottom": 8,
+      "blockClass": "bg-white"
+    }
+  } 
+}

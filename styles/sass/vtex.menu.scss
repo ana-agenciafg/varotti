@@ -1,0 +1,10 @@
+.menuContainerNav--footer-menu .styledLinkContainer {
+    padding: 8px 0;
+    margin: 0;
+    .styledLinkContent {
+        font-size: 1rem;
+        @include mobile{
+          font-size: 0.875rem;
+        }
+    }
+}

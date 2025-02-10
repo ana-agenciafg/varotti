@@ -1,0 +1,93 @@
+.sliderRightArrow::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyOSAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC43NzExIDI2LjI2N0wyMC4wNDA2IDE0Ljk5NzZMOC43NzExIDMuNzI4MjEiIHN0cm9rZT0iIzE1MTUxNSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPjwvc3ZnPg==");
+}
+.sliderRightArrow .caretIcon {
+  display: none;
+}
+
+.sliderLeftArrow::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyOSAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuMjI5OSAzLjcyODI3TDguOTYwMzkgMTQuOTk3N0wyMC4yMjk5IDI2LjI2NyIgc3Ryb2tlPSIjMTUxNTE1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+PC9zdmc+");
+}
+.sliderLeftArrow .caretIcon {
+  display: none;
+}
+
+@media (min-width: 1180px) {
+  .sliderLayoutContainer {
+    padding: 0 !important;
+  }
+  .sliderLayoutContainer .sliderRightArrow {
+    right: -50px;
+  }
+  .sliderLayoutContainer .sliderLeftArrow {
+    left: -50px;
+  }
+}
+.paginationDotsContainer {
+  bottom: 15px;
+}
+.paginationDotsContainer .paginationDot--isActive {
+  background-color: #931D1E;
+}
+
+.sliderLayoutContainer--home-fullbanner .caretIcon {
+  display: none;
+}
+.sliderLayoutContainer--home-fullbanner .sliderLeftArrow--home-fullbanner, .sliderLayoutContainer--home-fullbanner .sliderRightArrow--home-fullbanner {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  -webkit-background-size: 25px 25px !important;
+  background-color: rgba(220, 227, 229, 0.5) !important;
+  background-size: 25px !important;
+  width: 36px;
+  height: 36px;
+  border-radius: 16px;
+}
+.sliderLayoutContainer--home-fullbanner .sliderLeftArrow--home-fullbanner {
+  left: 10%;
+  background-image: url(assets/imgs/icones/arrow_left-home.png) !important;
+}
+.sliderLayoutContainer--home-fullbanner .sliderRightArrow--home-fullbanner {
+  right: 10%;
+  background-image: url(assets/imgs/icones/arrow_rigth-home.png) !important;
+}
+
+@media (max-width: 769px) {
+  .sliderLayoutContainer--home-marcas {
+    padding: 0 15px;
+  }
+}
+.sliderLayoutContainer--home-marcas .slide--home-marcas {
+  transition: 0.2s ease;
+}
+@media (min-width: 770px) {
+  .sliderLayoutContainer--home-marcas .slide--home-marcas {
+    padding: 15px;
+  }
+  .sliderLayoutContainer--home-marcas .slide--home-marcas:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+}
+@media (max-width: 769px) {
+  .sliderLayoutContainer--home-marcas .slide--home-marcas {
+    padding: 0 10px;
+  }
+  .sliderLayoutContainer--home-marcas .slide--home-marcas:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+}
+.sliderLayoutContainer--home-marcas .sliderLeftArrow--home-marcas {
+  zoom: 0.8;
+  left: -25px;
+}
+.sliderLayoutContainer--home-marcas .sliderRightArrow--home-marcas {
+  zoom: 0.8;
+  right: -25px;
+}
+
+.sliderLayoutContainer--home-categorias-imgs .paginationDotsContainer--home-categorias-imgs {
+  bottom: -25px;
+  gap: 15px;
+}

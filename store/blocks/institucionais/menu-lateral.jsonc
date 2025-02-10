@@ -1,0 +1,145 @@
+{
+    "responsive-layout.desktop#menu-lateral-institucionais-desktop": {
+      "children": ["flex-layout.col#menu-lateral-institucionais"]
+    },
+    "flex-layout.col#menu-lateral-institucionais": {
+        "title": "Menu Lateral Institucionais",
+        "children": [
+            "rich-text#menu-lateral-institucionais-title-1",
+            "vtex.menu@2.x:menu#menu-lateral-institucionais-1",
+            "rich-text#menu-lateral-institucionais-title-2",
+            "vtex.menu@2.x:menu#menu-lateral-institucionais-2"
+        ],
+        "props": {
+            "verticalAlign": "top"
+        }
+    },
+
+    "flex-layout.row#menu-lateral-institucionais-1": {
+        "title": "Item 1",
+        "children": [
+            "rich-text#menu-lateral-institucionais-title-1",
+            "vtex.menu@2.x:menu#menu-lateral-institucionais-1"
+        ]
+    },
+    "rich-text#menu-lateral-institucionais-title-1": {
+        "title": "Título",
+        "props": {
+            "text": "## INSTITUCIONAL",
+            "blockClass": "menu-lateral-insti-title"
+        }
+    },
+    "vtex.menu@2.x:menu#menu-lateral-institucionais-1": {
+        "title": "Menu 1",
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-lateral-institucionais",
+            "items": [ 
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/Institucional/nossa-historia",
+                        "noFollow": false,
+                        "tagTitle": "Nossa História",
+                        "text": "Nossa História"
+                    }
+                },
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/Institucional/formas-de-pagamento",
+                        "noFollow": false,
+                        "tagTitle": "Formas de Pagamento",
+                        "text": "Formas de Pagamento"
+                    }
+                },
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/Institucional/entrega",
+                        "noFollow": false,
+                        "tagTitle": "Política de Entrega",
+                        "text": "Política de Entrega"
+                    }
+                },
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/Institucional/politica-de-troca",
+                        "noFollow": false,
+                        "tagTitle": "Política de Troca",
+                        "text": "Política de Troca"
+                    }
+                }
+            ]
+        }
+    },
+
+
+
+
+    "flex-layout.row#menu-lateral-institucionais-2": {
+        "title": "Item 2",
+        "children": [
+            "rich-text#menu-lateral-institucionais-title-2",
+            "vtex.menu@2.x:menu#menu-lateral-institucionais-2"
+        ]
+    },
+    "rich-text#menu-lateral-institucionais-title-2": {
+        "title": "Título",
+        "props": {
+            "text": "## AJUDA",
+            "blockClass": "menu-lateral-insti-title"
+        }
+    },
+    "vtex.menu@2.x:menu#menu-lateral-institucionais-2":  {
+        "title": "Menu 2",
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-lateral-institucionais",
+            "items": [  
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/account/orders",
+                        "noFollow": false,
+                        "tagTitle": "Meus Pedidos",
+                        "text": "Meus Pedidos"
+                    }
+                },
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/account",
+                        "noFollow": false,
+                        "tagTitle": "Minha Conta",
+                        "text": "Minha Conta"
+                    }
+                },
+                { 
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/contato",
+                        "noFollow": false,
+                        "tagTitle": "Fale Conosco",
+                        "text": "Fale Conosco"
+                    }
+                }
+            ]
+        }
+    }
+}

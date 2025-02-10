@@ -1,0 +1,53 @@
+.minicartIconContainer::before {
+  content: url(assets/imgs/icones/userCart-header.svg);
+  display: block;
+}
+@media (min-width: 770px) {
+  .minicartIconContainer::after {
+    content: "Carrinho";
+    display: block;
+    color: #3D3D3D;
+    font-size: 0.875rem;
+    margin-top: 7px;
+  }
+}
+@media (max-width: 769px) {
+  .minicartIconContainer {
+    padding-right: 23px;
+  }
+}
+.minicartIconContainer .cartIcon {
+  display: none;
+}
+
+.minicartWrapperContainer {
+  justify-content: flex-end;
+}
+
+.minicartContainer :global(.vtex-button) {
+  font-weight: normal;
+}
+.minicartContainer :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.minicartQuantityBadgeDefault {
+  background-color: #151515;
+  border-radius: 100%;
+  right: 0;
+  font-weight: 600;
+}
+@media (max-width: 769px) {
+  .minicartQuantityBadgeDefault {
+    top: 8px;
+  }
+}
+@media (min-width: 770px) {
+  .minicartQuantityBadgeDefault {
+    top: -7px;
+  }
+}
+
+.openIconContainer {
+  padding: 0;
+}

@@ -1,0 +1,66 @@
+.container {
+  transition: 0.2s ease;
+  padding: 0 10px 5px 10px;
+}
+.container .brandName {
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .nameContainer {
+  padding: 5px 0 10px;
+}
+.container :global(.vtex-stack-layout-0-x-stackItem--summary-flag-desconto) {
+  padding: 6px 4px;
+}
+.container :global(.vtex-button) {
+  min-height: unset;
+}
+@media (max-width: 769px) {
+  .container :global(.vtex-button) {
+    height: 28px;
+    background-color: #13A43E;
+    border-color: #13A43E;
+  }
+}
+@media (min-width: 770px) {
+  .container :global(.vtex-button) {
+    height: 34px;
+  }
+  .container :global(.vtex-button):hover {
+    background-color: #13A43E;
+    border-color: #13A43E;
+  }
+}
+.container :global(.vtex-button) :global(.vtex-button__label) {
+  padding: 0;
+}
+.container :global(.vtex-button) :global(.vtex-button__label)::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2212%22 height%3D%2212%22 viewBox%3D%220 0 12 12%22 fill%3D%22none%22%3E%3Cpath d%3D%22M2.3502 8.84999C2.65519 8.84999 2.9477 8.97115 3.16337 9.18682C3.37904 9.40248 3.5002 9.69499 3.5002 9.99999C3.5002 10.305 3.37904 10.5975 3.16337 10.8132C2.9477 11.0288 2.65519 11.15 2.3502 11.15C2.0452 11.15 1.75269 11.0288 1.53702 10.8132C1.32136 10.5975 1.2002 10.305 1.2002 9.99999C1.2002 9.69499 1.32136 9.40248 1.53702 9.18682C1.75269 8.97115 2.0452 8.84999 2.3502 8.84999ZM2.3502 8.84999H8.6752M2.3502 8.84999V0.799988H1.2002M8.6752 8.84999C8.98019 8.84999 9.2727 8.97115 9.48837 9.18682C9.70404 9.40248 9.8252 9.69499 9.8252 9.99999C9.8252 10.305 9.70404 10.5975 9.48837 10.8132C9.2727 11.0288 8.98019 11.15 8.6752 11.15C8.3702 11.15 8.07769 11.0288 7.86202 10.8132C7.64636 10.5975 7.5252 10.305 7.5252 9.99999C7.5252 9.69499 7.64636 9.40248 7.86202 9.18682C8.07769 8.97115 8.3702 8.84999 8.6752 8.84999ZM2.3502 1.94999L10.4002 2.52499L9.8252 6.54999H2.3502%22 stroke%3D%22white%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  margin-right: 10px;
+}
+.container :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-size: 0.875rem;
+}
+@media (max-width: 769px) {
+  .container :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 770px) {
+  .container :global(.vtex-flex-layout-0-x-flexRow--summary-btns) {
+    opacity: 0;
+  }
+}
+@media (min-width: 770px) {
+  .container:hover {
+    transition: 0.2s ease;
+    background-color: white;
+  }
+  .container:hover :global(.vtex-flex-layout-0-x-flexRow--summary-btns) {
+    opacity: 1;
+  }
+}

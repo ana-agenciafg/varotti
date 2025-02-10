@@ -1,0 +1,33 @@
+{  
+    "menu-custom": { 
+        "component": "MenuCustom" 
+    }, 
+    "whatsapp-flutuante": { 
+        "component": "WhatsappFlutuante" 
+    }, 
+    "share-product": { 
+        "component": "ShareProduct" 
+    }, 
+    "formulario-contato": { 
+        "component": "FormContato" 
+    },
+    "helmet": { 
+        "component": "Helmet" 
+    },
+    "category-pagination": { 
+        "component": "CategoryPagination" 
+    },
+    "itens-com-sessao": {
+      "component": "ItensComSessao"
+    },
+    "compra-fixa-pdp": {
+      "component": "CompraFixaPdp", 
+      "composition": "children"
+    },
+    "carrinho-fixo-listagem": {
+      "component": "CarrinhoFixoListagem" 
+    },
+    "name-product": {
+      "component": "NameProductPdp" 
+    }
+}

@@ -1,0 +1,75 @@
+{
+  "flex-layout.row#pix-price-pdp": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 3
+    },
+    "children": [
+      "product-spot-price#price-pix-pdp" 
+    ]
+  },
+  "flex-layout.row#pix-price": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 3
+    },
+    "children": [
+      "product-spot-price#price-pix" 
+    ]
+  },
+  "flex-layout.row#selling-price": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true 
+    },
+    "children": [ 
+      "product-selling-price",
+      "product-installments"
+    ]
+  },
+
+  "flex-layout.row#list-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 1,
+      "marginTop": 5
+    },
+    "children": [
+      "product-list-price",
+      "product-spot-price-savings#pdp-flag-desconto-porcentagem"
+    ]
+  },
+  "product-spot-price#price-pix": {
+    "props": {
+      "blockClass": "price-pix",
+      "message": "{spotPriceValue} no Pix"
+    }
+  }, 
+  "product-spot-price#price-pix-pdp": {
+    "props": {
+      "blockClass": "price-pix-pdp",
+      "message": "{spotPriceValue} no Pix"
+    }
+  }, 
+  "product-spot-price-savings#pdp-flag-desconto-porcentagem": {  
+    "props": {
+      "minimumPercentage": 10, 
+      "blockClass": "pdp-flag-desconto",      
+      "message": "{spotPriceSavingsPercentage} OFF"
+    }
+  },
+  "product-spot-price-savings#summary-flag-desconto-porcentagem": {  
+    "props": {
+      "minimumPercentage": 10, 
+      "blockClass": "summary-flag-desconto",      
+      "message": "{spotPriceSavingsPercentage} OFF"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.buttonText--pdp {
+  font-size: 0.75rem;
+}
+@media (min-width: 770px) {
+  .buttonText--pdp {
+    font-size: 0.875rem;
+  }
+}

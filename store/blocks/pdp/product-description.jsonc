@@ -1,0 +1,59 @@
+{ 
+  "flex-layout.row#pdp-description-title": {
+    "title": "Título descrição do produto",
+    "children": ["rich-text#pdp-description-title"], 
+    "props": { 
+      "htmlId": "descricao"
+    }
+  },
+  "rich-text#pdp-description-title": {
+    "title": "Título",
+    "props": {
+      "text": "## Informações do **produto**" ,
+      "blockClass": "title-type-two",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "font": "t-heading-2" 
+    }
+  }, 
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "description-pdp"
+    },
+    "children": ["product-description#full"]
+  },
+  "product-description#full":{
+    "props": {
+      "showTitle": false,
+      "collapseContent": false
+    }
+  },
+
+  // SHORT DESCRIPTION 
+  "responsive-layout.desktop#product-description-desktop": {
+    "children": [
+      "product-specifications#short",
+      "rich-text#pdp-ver-descricao-completa"
+    ]
+  },
+  "responsive-layout.mobile#pdp-ver-descricao-completa-mobile": {
+    "children": [ 
+      "rich-text#pdp-ver-descricao-completa"
+    ]
+  },
+  "product-specifications#short": {
+    "props": {
+      "visibleSpecifications": ["Descrição Comercial"],
+      "blockClass": "topo-descricap-pdp"
+    }
+  }, 
+  "rich-text#pdp-ver-descricao-completa": {
+    "title": "Link para desc completa",
+    "props": {
+        "text": "[Ver mais informações do produto](#descricao)" ,
+        "blockClass": "pdp-ver-descricao-completa", 
+        "font": "t-small" 
+    }
+  }
+}

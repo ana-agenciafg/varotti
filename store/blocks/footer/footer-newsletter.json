@@ -1,0 +1,81 @@
+{
+    "flex-layout.row#footer-newsletter": {
+        "title": "Newsletter",
+        "children": [
+            "flex-layout.col#footer-newsletter-txt",
+            "flex-layout.col#footer-newsletter-form"
+        ],
+        "props": {
+            "horizontalAlign": "between",
+            "blockClass": ["footer-newsletter","relative"],
+            "paddingTop": 7,
+            "paddingBottom": 7
+        }
+    }, 
+    "flex-layout.col#footer-newsletter-txt": {
+        "title": "Newsletter",
+        "children": [
+            "rich-text#footer-newsletter-txt1",
+            "rich-text#footer-newsletter-txt2",
+            "image#footer-newsletter-selo"
+        ],
+        "props": { 
+            "verticalAlign": "middle"
+        }
+    }, 
+    "image#footer-newsletter-selo": {
+      "title": "Selo Newsletter",
+      "props": {
+        "src": "/arquivos/Selo_newsletter.png",
+        "blockClass": "newsletter-selo"
+      }
+    },
+    "flex-layout.col#footer-newsletter-form": {
+        "title": "Textos",
+        "children": [ "newsletter-form#footer" ],
+        "props": {
+            "blockClass": "footer-newsletter",
+            "verticalAlign": "middle"
+        }
+    }, 
+    "newsletter-form#footer": {
+        "title": "Formulário",
+        "children": [
+            "newsletter-input-name#footer",
+            "newsletter-input-email#footer",
+            "newsletter-submit#footer"
+        ]
+    },
+    "newsletter-input-name#footer": {
+        "props": {
+            "inputLabel": "Nome",
+            "placeholderText": "Digite seu nome"
+        }
+    },
+    "newsletter-input-email#footer": {
+        "props": {
+            "inputLabel": "E-mail",
+            "placeholderText": "Digite seu e-mail"
+        }
+    },
+    "newsletter-submit#footer": {
+        "props": {
+            "submitButtonLabel": "Cadastrar"
+        }
+    },
+    
+    "rich-text#footer-newsletter-txt1": {
+        "title": "Texto",
+        "props": {
+            "text": "#### **Cadastre-se** a acompanhe nossos **lançamentos**",
+            "blockClass": ["footer-newsletter-txt1","text-white","mobile-text-center"]
+        }
+    },
+    "rich-text#footer-newsletter-txt2": {
+        "title": "Subtexto",
+        "props": {
+            "text": "Ganhe **descontos** e fique por dentro de nossas **novidades**",
+            "blockClass": ["footer-newsletter-txt2","text-white","mobile-text-center","margin-0"]
+        }
+    }
+}
