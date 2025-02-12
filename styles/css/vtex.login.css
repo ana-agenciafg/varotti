@@ -87,3 +87,11 @@
   font-size: 0.875rem;
   font-weight: 500;
 }
+
+:global(.varotti-trustvox-0-x-trustvoxContainer) {
+  padding: 0 20px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-container) {
+  display: none !important;
+}

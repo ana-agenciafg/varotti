@@ -4950,9 +4950,9 @@ validate-npm-package-license@^3.0.1:
   version "0.0.1"
   resolved "http://varotti.vtexassets.com/_v/public/typings/v1/varotti.trustvox@0.0.1/public/@types/varotti.trustvox#da9f00bd5c27424500df2228391bf4e84cbd3a59"
 
-"varotti.varotti-theme@https://store--varotti.myvtex.com/_v/private/typings/linked/v1/varotti.varotti-theme@3.0.9+build1737988187/public/@types/varotti.varotti-theme":
-  version "3.0.9"
-  resolved "https://store--varotti.myvtex.com/_v/private/typings/linked/v1/varotti.varotti-theme@3.0.9+build1737988187/public/@types/varotti.varotti-theme#861efff5a1afdc0c30c9c3aa2ad6d3895fa0daaa"
+"varotti.varotti-theme@https://store--varotti.myvtex.com/_v/private/typings/linked/v1/varotti.varotti-theme@3.0.12+build1739381144/public/@types/varotti.varotti-theme":
+  version "3.0.12"
+  resolved "https://store--varotti.myvtex.com/_v/private/typings/linked/v1/varotti.varotti-theme@3.0.12+build1739381144/public/@types/varotti.varotti-theme#00a23458e4939184bc3b5fa4bf7fed703a7bc201"
 
 verror@1.10.0:
   version "1.10.0"
@@ -5022,6 +5022,10 @@ verror@1.10.0:
 "vtex.my-account@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.29.0/public/@types/vtex.my-account":
   version "1.29.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.29.0/public/@types/vtex.my-account#014ffc22855e21f321b5ed81d1c95e547740b0ba"
+
+"vtex.order-items@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.14.0/public/@types/vtex.order-items":
+  version "0.14.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.14.0/public/@types/vtex.order-items#73d1025ed6231ad4e6914c1896e3e17495b59699"
 
 "vtex.order-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager":
   version "0.12.0"
@@ -5131,9 +5135,9 @@ verror@1.10.0:
   version "0.3.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sticky-layout@0.3.4/public/@types/vtex.sticky-layout#5b786d6f9ab0a40e4997c955a75885eee32515ef"
 
-"vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components":
-  version "3.176.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components#aab0c7cdf327d537febab2e1c9e2ac49d92f5de7"
+"vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.2/public/@types/vtex.store-components":
+  version "3.176.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.2/public/@types/vtex.store-components#12958b81c9050e4698faf68ee37cce74f0848df8"
 
 "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.1/public/@types/vtex.store-drawer":
   version "0.18.1"
